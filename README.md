@@ -156,13 +156,11 @@ export AI_CUSTOM_INSTRUCTIONS="$(cat ~/.claude/skills/skill-name/SKILL.md)"
 | `advanced-evaluation` | LLM-as-Judge 高级评估技术 | 模型输出比较、评估管道 |
 | `agent-evaluation` | LLM Agent 测试与基准评估 | Agent 行为测试、可靠性指标、生产监控 |
 | `agent-manager-skill` | 多 Agent 管理器 (tmux) | 通过 tmux 会话管理多个本地 CLI Agent |
-| `agent-memory-systems` | Agent 记忆系统架构 | 短期/长期记忆、向量存储、检索策略 |
 | `agent-tool-builder` | Agent 工具设计与构建 | JSON Schema、工具描述、MCP 标准 |
 | `ai-agents-architect` | 自主 AI Agent 设计专家 | 工具使用、记忆系统、多 Agent 编排 |
 | `ai-product` | AI 产品开发模式 | LLM 集成、RAG 架构、AI UX、成本优化 |
 | `ai-wrapper-product` | AI API 包装产品开发 | OpenAI/Anthropic 包装、提示工程、成本管理 |
 | `autonomous-agent-patterns` | 自主编程 Agent 设计模式 | 构建 AI Agent、权限系统 |
-| `autonomous-agents` | 自主 Agent 架构 | ReAct、Plan-Execute、目标分解、自我纠正 |
 | `bdi-mental-states` | BDI 心智状态建模 | 信念-期望-意图架构 |
 | `blockrun` | 外部模型调用 | 图像生成、实时 X/Twitter 数据、Grok/GPT/DALL-E |
 | `computer-use-agents` | 计算机使用 Agent | 屏幕控制、GUI 自动化、视觉 Agent |
@@ -181,7 +179,6 @@ export AI_CUSTOM_INSTRUCTIONS="$(cat ~/.claude/skills/skill-name/SKILL.md)"
 | `parallel-agents` | 多 Agent 编排模式 | 多任务并行、多视角分析 |
 | `project-development` | LLM 项目开发方法论 | 管道架构、成本估算 |
 | `prompt-caching` | LLM 提示缓存策略 | Anthropic 缓存、响应缓存、CAG |
-| `prompt-engineer` | 提示工程专家 | 提示结构、上下文管理、输出格式化 |
 | `prompt-engineering` | 提示工程模式与最佳实践 | 优化提示、调试 Agent 行为 |
 | `prompt-library` | 高质量提示模板库 | 角色扮演、任务特定提示 |
 | `rag-engineer` | RAG 系统构建专家 | 嵌入模型、向量数据库、分块策略 |
@@ -262,7 +259,6 @@ export AI_CUSTOM_INSTRUCTIONS="$(cat ~/.claude/skills/skill-name/SKILL.md)"
 | `software-architecture` | 软件架构开发指南 | Clean Architecture、DDD |
 | `systematic-debugging` | 系统化调试方法 | Bug 修复、测试失败分析 |
 | `tailwind-patterns` | Tailwind CSS v4 原则 | CSS-first 配置、容器查询、设计令牌 |
-| `tdd-workflow` | 测试驱动开发工作流 | RED-GREEN-REFACTOR 循环 |
 | `test-driven-development` | 测试驱动开发 | 先写测试再实现 |
 | `test-fixing` | 测试修复工具 | 智能错误分组修复 |
 | `testing-patterns` | Jest 测试模式 | 工厂函数、Mock 策略 |
@@ -274,10 +270,10 @@ export AI_CUSTOM_INSTRUCTIONS="$(cat ~/.claude/skills/skill-name/SKILL.md)"
 
 | Skill 名称 | 简述 | 用法/触发条件 |
 |-----------|------|-------------|
-| `docx` / `docx-official` | Word 文档创建、编辑、分析 | 修订追踪、批注、格式保留 |
-| `pdf` / `pdf-official` | PDF 处理工具包 | 表单填写、文本提取、合并拆分 |
-| `pptx` / `pptx-official` | PowerPoint 演示文稿处理 | 创建、编辑、布局管理 |
-| `xlsx` / `xlsx-official` | Excel 电子表格处理 | 公式、格式化、数据分析 |
+| `docx-official` | Word 文档创建、编辑、分析 | 修订追踪、批注、格式保留 |
+| `pdf-official` | PDF 处理工具包 | 表单填写、文本提取、合并拆分 |
+| `pptx-official` | PowerPoint 演示文稿处理 | 创建、编辑、布局管理 |
+| `xlsx-official` | Excel 电子表格处理 | 公式、格式化、数据分析 |
 
 ### 🎨 设计与 UI/UX
 
@@ -287,8 +283,6 @@ export AI_CUSTOM_INSTRUCTIONS="$(cat ~/.claude/skills/skill-name/SKILL.md)"
 | `algorithmic-art` | p5.js 算法艺术创作 | 生成艺术、流场、粒子系统 |
 | `artifacts-builder` | Claude.ai HTML Artifact 构建器 | React、Tailwind、shadcn/ui |
 | `brand-guidelines` | Anthropic 品牌样式指南 | 品牌色彩、排版 |
-| `brand-guidelines-anthropic` | Anthropic 品牌指南 | Anthropic 官方品牌规范 |
-| `brand-guidelines-community` | 社区品牌指南 | 社区品牌规范 |
 | `canvas-design` | 视觉艺术设计 (PNG/PDF) | 海报、静态设计作品 |
 | `claude-d3js-skill` | D3.js 交互式数据可视化 | 自定义图表、网络图 |
 | `i18n-localization` | 国际化与本地化模式 | 检测硬编码字符串、翻译管理、RTL 支持 |
@@ -322,8 +316,6 @@ export AI_CUSTOM_INSTRUCTIONS="$(cat ~/.claude/skills/skill-name/SKILL.md)"
 | `copywriting` | 营销文案写作 | 首页、落地页、定价页、CTA 文案 |
 | `doc-coauthoring` | 文档协作工作流 | 提案、技术规格、决策文档 |
 | `internal-comms` | 内部沟通模板 | 状态报告、3P 更新、FAQ |
-| `internal-comms-anthropic` | Anthropic 内部沟通 | Anthropic 风格内部沟通 |
-| `internal-comms-community` | 社区内部沟通 | 社区风格内部沟通 |
 | `social-content` | 社交媒体内容创作 | LinkedIn、Twitter、Instagram、TikTok 内容 |
 
 ### 📋 规格与计划
@@ -359,8 +351,7 @@ export AI_CUSTOM_INSTRUCTIONS="$(cat ~/.claude/skills/skill-name/SKILL.md)"
 | `clerk-auth` | Clerk 认证集成 | 中间件、组织、Webhook、用户同步 |
 | `competitive-ads-extractor` | 竞品广告分析 | 提取分析竞争对手广告 |
 | `competitor-alternatives` | 竞品对比页面创建 | 替代方案页、VS 页、竞品比较 |
-| `connect` / `connect-apps` | 连接外部应用 | Gmail、Slack、GitHub 集成 |
-| `connect-apps-plugin` | 连接应用插件 | 应用集成插件 |
+| `connect` | 连接外部应用 | Gmail、Slack、GitHub 集成 (Composio) |
 | `developer-growth-analysis` | 开发者成长分析 | 编码模式、学习资源 |
 | `discord-bot-architect` | Discord 机器人开发 | Discord.js、Pycord、斜杠命令、分片 |
 | `domain-name-brainstormer` | 域名创意与查询 | 域名头脑风暴、可用性检查 |
@@ -472,4 +463,4 @@ cd ~/.claude/skills && git pull
 
 ---
 
-> 📖 本文档最后更新: 2026-01
+> 📖 本文档最后更新: 2026-01-24 (清理重复 skills)
