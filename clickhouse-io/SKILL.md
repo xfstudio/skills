@@ -1,6 +1,8 @@
 ---
 name: clickhouse-io
 description: ClickHouse database patterns, query optimization, analytics, and data engineering best practices for high-performance analytical workloads.
+author: affaan-m
+version: "1.0"
 ---
 
 # ClickHouse Analytics Patterns

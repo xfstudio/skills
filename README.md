@@ -8,359 +8,326 @@
 
 ```bash
 # 一键安装所有 skills
-npx add-skill xfstudio/skills
+npx skills add xfstudio/skills
 
 # 安装单个 skill
-npx add-skill xfstudio/skills --skill skill-name
+npx skills add xfstudio/skills --skill skill-name
 
 # 更新已安装的 skills
-npx add-skill xfstudio/skills --update
+npx skills update xfstudio/skills
 ```
 
 ---
 
-## Skills 列表 (256 个)
+## Skills 列表 (303 个)
 
-### 🔐 安全与渗透测试 (32)
+> 每个 skill 的触发条件已在描述中说明
 
-| Skill | 简述 |
-|-------|------|
-| `active-directory-attacks` | AD 攻击技术 (Kerberoasting, DCSync, Pass-the-Hash) |
-| `api-fuzzing-bug-bounty` | REST/GraphQL/SOAP API 安全测试 |
-| `aws-penetration-testing` | AWS 云环境渗透测试 |
-| `broken-authentication` | 身份认证漏洞测试 |
-| `burp-suite-testing` | Burp Suite 使用指南 |
-| `cc-skill-security-review` | 安全审查检查清单 |
-| `ciphey` | 自动密码破解工具 (50+ 加密类型) |
-| `cloud-penetration-testing` | 多云平台安全评估 |
-| `ethical-hacking-methodology` | 道德黑客方法论 |
-| `file-path-traversal` | 目录遍历漏洞测试 |
-| `file-uploads` | 文件上传安全处理 |
-| `html-injection-testing` | HTML 注入测试 |
-| `idor-testing` | IDOR 漏洞测试 |
-| `linux-privilege-escalation` | Linux 提权技术 |
-| `linux-shell-scripting` | Shell 脚本模板 |
-| `metasploit-framework` | Metasploit 使用指南 |
-| `network-101` | 网络服务配置基础 |
-| `pentest-checklist` | 渗透测试检查清单 |
-| `pentest-commands` | 渗透测试命令速查 |
-| `privilege-escalation-methods` | 提权方法汇总 |
-| `red-team-tactics` | 红队战术 (MITRE ATT&CK) |
-| `red-team-tools` | 红队工具与方法论 |
-| `scanning-tools` | 安全扫描工具 |
-| `shodan-reconnaissance` | Shodan 侦察 |
-| `smtp-penetration-testing` | SMTP 安全测试 |
-| `sql-injection-testing` | SQL 注入测试 |
-| `sqlmap-database-pentesting` | SQLMap 自动化渗透 |
-| `ssh-penetration-testing` | SSH 安全测试 |
-| `top-web-vulnerabilities` | Top 100 Web 漏洞 |
-| `vulnerability-scanner` | 高级漏洞分析 |
-| `windows-privilege-escalation` | Windows 提权技术 |
-| `wireshark-analysis` | Wireshark 流量分析 |
-| `wordpress-penetration-testing` | WordPress 安全评估 |
-| `xss-html-injection` | XSS 注入测试 |
-
-### 🤖 AI/LLM 开发 (38)
-
-| Skill | 简述 |
-|-------|------|
-| `advanced-evaluation` | LLM-as-Judge 评估技术 |
-| `agent-evaluation` | Agent 测试与基准评估 |
-| `agent-manager-skill` | 多 Agent 管理器 (tmux) |
-| `agent-tool-builder` | Agent 工具设计 |
-| `ai-agents-architect` | 自主 AI Agent 设计 |
-| `ai-product` | AI 产品开发模式 |
-| `ai-wrapper-product` | AI API 包装产品 |
-| `autonomous-agent-patterns` | 自主 Agent 设计模式 |
-| `bdi-mental-states` | BDI 心智状态建模 |
-| `blockrun` | 外部模型调用 (Grok/GPT/DALL-E) |
-| `computer-use-agents` | 计算机使用 Agent |
-| `context-window-management` | 上下文窗口管理 |
-| `conversation-memory` | 对话记忆系统 |
-| `crewai` | CrewAI 多 Agent 框架 |
-| `evaluation` | Agent 系统评估 |
-| `hosted-agents` | 托管 Agent 基础设施 |
-| `langfuse` | Langfuse LLM 可观测性 |
-| `langgraph` | LangGraph 状态化 Agent |
-| `llm-app-patterns` | LLM 应用开发模式 |
-| `loki-mode` | 多 Agent 自主创业系统 |
-| `mcp-builder` | MCP 服务器开发 |
-| `memory-systems` | Agent 记忆系统设计 |
-| `multi-agent-patterns` | 多 Agent 架构模式 |
-| `parallel-agents` | 多 Agent 编排 |
-| `project-development` | LLM 项目开发方法论 |
-| `prompt-caching` | 提示缓存策略 |
-| `prompt-engineering` | 提示工程最佳实践 |
-| `prompt-library` | 高质量提示模板库 |
-| `rag-engineer` | RAG 系统构建 |
-| `rag-implementation` | RAG 实现模式 |
-| `ralph-loop` | 自主开发循环 |
-| `tool-design` | Agent 工具设计 |
-| `voice-agents` | 语音 Agent 开发 |
-| `voice-ai-development` | 语音 AI 应用开发 |
-
-### 📚 上下文工程 (5)
-
-| Skill | 简述 |
-|-------|------|
-| `context-compression` | 上下文压缩策略 |
-| `context-degradation` | 上下文退化诊断 |
-| `context-fundamentals` | 上下文工程基础 |
-| `context-optimization` | 上下文优化技术 |
-| `filesystem-context` | 文件系统上下文工程 |
-
-### 💻 代码开发与工程 (75)
-
-| Skill | 简述 |
-|-------|------|
-| `api-patterns` | API 设计原则 |
-| `app-builder` | 全栈应用构建编排器 |
-| `architecture` | 架构决策框架 |
-| `aws-serverless` | AWS 无服务器开发 |
-| `azure-functions` | Azure Functions 开发 |
-| `backend-dev-guidelines` | Node.js/Express 后端指南 |
-| `backend-patterns` | 后端架构模式 |
-| `bash-linux` | Bash/Linux 终端模式 |
-| `behavioral-modes` | AI 操作模式 |
-| `browser-automation` | 浏览器自动化 |
-| `browser-extension-builder` | 浏览器扩展开发 |
-| `bullmq-specialist` | BullMQ 队列专家 |
-| `bun-development` | Bun 运行时开发 |
-| `cc-skill-backend-patterns` | 后端架构模式 |
-| `cc-skill-clickhouse-io` | ClickHouse 数据库 |
-| `cc-skill-coding-standards` | 通用编码标准 |
-| `cc-skill-continuous-learning` | 持续学习技能 |
-| `cc-skill-frontend-patterns` | 前端开发模式 |
-| `cc-skill-project-guidelines-example` | 项目指南示例 |
-| `cc-skill-strategic-compact` | 战略紧凑技能 |
-| `clean-code` | 务实编码标准 |
-| `claude-code-guide` | Claude Code 使用指南 |
-| `clickhouse-io` | ClickHouse 数据库 |
-| `code-review-checklist` | 代码审查检查清单 |
-| `coding-standards` | 编码标准 |
-| `continuous-learning` | 持续学习 |
-| `core-components` | 核心组件库 |
-| `database-design` | 数据库设计原则 |
-| `deployment-procedures` | 生产部署原则 |
-| `docker-expert` | Docker 容器化专家 |
-| `documentation-templates` | 文档模板 |
-| `firebase` | Firebase 后端开发 |
-| `frontend-design` | 前端界面设计 |
-| `frontend-dev-guidelines` | React/TypeScript 前端指南 |
-| `frontend-patterns` | 前端开发模式 |
-| `game-development` | 游戏开发编排器 |
-| `gcp-cloud-run` | GCP Cloud Run 开发 |
-| `graphql` | GraphQL 开发 |
-| `inngest` | Inngest 后台任务 |
-| `javascript-mastery` | JavaScript 核心概念 |
-| `kaizen` | 持续改进指南 |
-| `lint-and-validate` | 自动质量控制 |
-| `moodle-external-api-development` | Moodle API 开发 |
-| `neon-postgres` | Neon 无服务器 Postgres |
-| `nestjs-expert` | Nest.js 框架专家 |
-| `nextjs-best-practices` | Next.js App Router |
-| `nextjs-supabase-auth` | Next.js + Supabase Auth |
-| `nodejs-best-practices` | Node.js 开发原则 |
-| `performance-profiling` | 性能分析原则 |
-| `powershell-windows` | PowerShell Windows |
-| `prisma-expert` | Prisma ORM 专家 |
-| `python-patterns` | Python 开发模式 |
-| `react-best-practices` | React 性能优化 |
-| `react-patterns` | 现代 React 模式 |
-| `react-ui-patterns` | React UI 模式 |
-| `remotion-best-practices` | Remotion 视频创建 |
-| `research-engineer` | 学术研究工程师 |
-| `security-review` | 安全审查 |
-| `senior-architect` | 高级软件架构 |
-| `senior-fullstack` | 全栈开发工具包 |
-| `server-management` | 服务器管理原则 |
-| `software-architecture` | 软件架构指南 |
-| `strategic-compact` | 战略紧凑 |
-| `systematic-debugging` | 系统化调试 |
-| `tailwind-patterns` | Tailwind CSS v4 |
-| `test-driven-development` | 测试驱动开发 |
-| `test-fixing` | 测试修复工具 |
-| `testing-patterns` | Jest 测试模式 |
-| `trigger-dev` | Trigger.dev 后台任务 |
-| `typescript-expert` | TypeScript 专家 |
-| `unzip-crx` | Chrome 扩展解压 |
-| `vercel-deployment` | Vercel 部署专家 |
-| `webapp-testing` | Web 应用测试 |
-
-### 📄 文档处理 (8)
-
-| Skill | 简述 |
-|-------|------|
-| `docx` | Word 文档处理 |
-| `docx-official` | Word 文档 (官方版) |
-| `pdf` | PDF 处理 |
-| `pdf-official` | PDF 处理 (官方版) |
-| `pptx` | PowerPoint 处理 |
-| `pptx-official` | PowerPoint (官方版) |
-| `xlsx` | Excel 处理 |
-| `xlsx-official` | Excel (官方版) |
-
-### 🎨 设计与 UI/UX (20)
-
-| Skill | 简述 |
-|-------|------|
-| `3d-web-experience` | 3D Web 体验 (Three.js) |
-| `algorithmic-art` | p5.js 算法艺术 |
-| `artifacts-builder` | Claude.ai Artifact 构建器 |
-| `baoyu-article-illustrator` | 文章配图生成 |
-| `baoyu-comic` | 知识漫画创作 |
-| `baoyu-cover-image` | 封面图生成 |
-| `baoyu-image-gen` | 图像生成 |
-| `baoyu-infographic` | 信息图生成 |
-| `baoyu-slide-deck` | 幻灯片生成 |
-| `baoyu-xhs-images` | 小红书图片生成 |
-| `brand-guidelines` | 品牌样式指南 |
-| `canvas-design` | 视觉艺术设计 |
-| `claude-d3js-skill` | D3.js 数据可视化 |
-| `i18n-localization` | 国际化与本地化 |
-| `interactive-portfolio` | 交互式作品集 |
-| `mobile-design` | 移动优先设计 |
-| `scroll-experience` | 沉浸式滚动体验 |
-| `theme-factory` | 主题工厂工具包 |
-| `ui-ux-pro-max` | UI/UX 设计智能 |
-| `web-artifacts-builder` | Web Artifact 构建器 |
-| `web-design-guidelines` | Web 设计规范 |
-
-### 🔀 Git 与 GitHub (6)
-
-| Skill | 简述 |
-|-------|------|
-| `address-github-comments` | 处理 GitHub PR 评论 |
-| `changelog-generator` | 自动生成变更日志 |
-| `finishing-a-development-branch` | 完成开发分支 |
-| `git-pushing` | Git 提交推送 |
-| `github-workflow-automation` | GitHub 工作流自动化 |
-| `using-git-worktrees` | Git Worktree 使用 |
-
-### ✍️ 内容创作 (10)
-
-| Skill | 简述 |
-|-------|------|
-| `brainstorming` | 头脑风暴与设计探索 |
-| `content-creator` | SEO 营销内容创作 |
-| `content-research-writer` | 研究写作助手 |
-| `copy-editing` | 营销文案编辑 |
-| `copywriting` | 营销文案写作 |
-| `doc-coauthoring` | 文档协作工作流 |
-| `internal-comms` | 内部沟通模板 |
-| `social-content` | 社交媒体内容 |
-
-### 📋 规格与计划 (18)
-
-| Skill | 简述 |
-|-------|------|
-| `concise-planning` | 简洁计划生成 |
-| `dispatching-parallel-agents` | 并行 Agent 调度 |
-| `executing-plans` | 执行实现计划 |
-| `plan-writing` | 结构化任务规划 |
-| `planning-with-files` | 基于文件的计划 |
-| `spec-analyze` | 规格一致性分析 |
-| `spec-checklist` | 规格质量检查 |
-| `spec-clarify` | 规格澄清问答 |
-| `spec-constitution` | 项目宪法创建 |
-| `spec-implement` | 规格实现执行 |
-| `spec-plan` | 实现计划生成 |
-| `spec-specify` | 特性规格创建 |
-| `spec-tasks` | 任务列表生成 |
-| `spec-taskstoissues` | 任务转 GitHub Issues |
-| `specify-resources` | 规格驱动开发资源 |
-| `subagent-driven-development` | 子 Agent 驱动开发 |
-| `writing-plans` | 编写实现计划 |
-
-### 🛠️ 实用工具 (70+)
-
-| Skill | 简述 |
-|-------|------|
-| `ab-test-setup` | A/B 测试规划 |
-| `algolia-search` | Algolia 搜索实现 |
-| `analytics-tracking` | 分析追踪设置 |
-| `app-store-optimization` | 应用商店优化 |
-| `baoyu-compress-image` | 图片压缩 |
-| `baoyu-danger-gemini-web` | Gemini Web 工具 |
-| `baoyu-danger-x-to-markdown` | X/Twitter 转 Markdown |
-| `baoyu-post-to-wechat` | 发布到微信 |
-| `baoyu-post-to-x` | 发布到 X/Twitter |
-| `baoyu-url-to-markdown` | URL 转 Markdown |
-| `clerk-auth` | Clerk 认证集成 |
-| `competitive-ads-extractor` | 竞品广告分析 |
-| `competitor-alternatives` | 竞品对比页面 |
-| `connect` | 连接外部应用 |
-| `developer-growth-analysis` | 开发者成长分析 |
-| `discord-bot-architect` | Discord 机器人 |
-| `domain-name-brainstormer` | 域名创意 |
-| `email-sequence` | 邮件序列优化 |
-| `email-systems` | 邮件系统开发 |
-| `file-organizer` | 智能文件整理 |
-| `find-skills` | 技能搜索 |
-| `form-cro` | 表单转化优化 |
-| `free-tool-strategy` | 免费工具营销 |
-| `geo-fundamentals` | 生成式引擎优化 |
-| `hubspot-integration` | HubSpot CRM 集成 |
-| `image-enhancer` | 图片质量增强 |
-| `invoice-organizer` | 发票自动整理 |
-| `langsmith-fetch` | LangSmith 调试 |
-| `launch-strategy` | 产品发布策略 |
-| `lead-research-assistant` | 潜在客户研究 |
-| `marketing-ideas` | 营销创意库 |
-| `marketing-psychology` | 营销心理学 |
-| `meeting-insights-analyzer` | 会议洞察分析 |
-| `micro-saas-launcher` | Micro SaaS 启动 |
-| `notebooklm` | NotebookLM 助手 |
-| `notion-template-business` | Notion 模板商业化 |
-| `onboarding-cro` | 用户激活优化 |
-| `page-cro` | 页面转化优化 |
-| `paid-ads` | 付费广告投放 |
-| `paywall-upgrade-cro` | 付费墙升级优化 |
-| `personal-tool-builder` | 个人工具开发 |
-| `plaid-fintech` | Plaid 金融科技 |
-| `playwright-skill` | Playwright 自动化 |
-| `popup-cro` | 弹窗转化优化 |
-| `pricing-strategy` | 定价策略 |
-| `product-manager-toolkit` | 产品经理工具包 |
-| `programmatic-seo` | 程序化 SEO |
-| `raffle-winner-picker` | 抽奖选择器 |
-| `referral-program` | 推荐计划设计 |
-| `release-skills` | 技能发布 |
-| `salesforce-development` | Salesforce 开发 |
-| `schema-markup` | Schema 结构化数据 |
-| `segment-cdp` | Segment CDP |
-| `seo-audit` | SEO 审计 |
-| `seo-fundamentals` | SEO 基础 |
-| `shopify-apps` | Shopify 应用开发 |
-| `shopify-development` | Shopify 开发 |
-| `signup-flow-cro` | 注册流程优化 |
-| `skill-creator` | Skill 创建指南 |
-| `skill-developer` | Skill 开发指南 |
-| `skill-forge` | Skill 自动化工厂 |
-| `skill-share` | Skill 分享工具 |
-| `slack-bot-builder` | Slack 机器人 |
-| `slack-gif-creator` | Slack GIF 创建 |
-| `stripe-integration` | Stripe 支付集成 |
-| `tailored-resume-generator` | 定制简历生成 |
-| `telegram-bot-builder` | Telegram 机器人 |
-| `telegram-mini-app` | Telegram Mini App |
-| `template-skill` | Skill 模板 |
-| `twilio-communications` | Twilio 通信开发 |
-| `upstash-qstash` | Upstash QStash |
-| `video-downloader` | YouTube 视频下载 |
-| `viral-generator-builder` | 病毒式生成器 |
-| `workflow-automation` | 工作流自动化 |
-| `zapier-make-patterns` | Zapier/Make 自动化 |
-
-### 🔍 代码审查与验证 (5)
-
-| Skill | 简述 |
-|-------|------|
-| `receiving-code-review` | 接收代码审查 |
-| `requesting-code-review` | 请求代码审查 |
-| `using-superpowers` | 使用超能力技能 |
-| `verification-before-completion` | 完成前验证 |
-| `writing-skills` | 编写 Skills 指南 |
+| Skill | 触发条件 / 描述 |
+|-------|----------------|
+| `3d-web-experience` | Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes... |
+| `ab-test-setup` | Structured guide for setting up A/B tests with mandatory gates for hypothesis, metrics, and execution readiness. |
+| `active-directory-attacks` | This skill should be used when the user asks to "attack Active Directory", "exploit AD", "Kerberoasting", "DCSync", "... |
+| `address-github-comments` | Use when you need to address review or issue comments on an open GitHub Pull Request using the gh CLI. |
+| `advanced-evaluation` | This skill should be used when the user asks to "implement LLM-as-judge", "compare model outputs", "create evaluation... |
+| `agent-evaluation` | Testing and benchmarking LLM agents including behavioral testing, capability assessment, reliability metrics, and pro... |
+| `agent-manager-skill` | Manage multiple local CLI agents via tmux sessions (start/stop/monitor/assign) with cron-friendly scheduling. |
+| `agent-memory-mcp` | A hybrid memory system that provides persistent, searchable knowledge management for AI agents (Architecture, Pattern... |
+| `agent-memory-systems` | Memory is the cornerstone of intelligent agents. Without it, every interaction starts from zero. This skill covers th... |
+| `agent-tool-builder` | Tools are how AI agents interact with the world. A well-designed tool is the difference between an agent that works a... |
+| `ai-agents-architect` | Expert in designing and building autonomous AI agents. Masters tool use, memory systems, planning strategies, and mul... |
+| `ai-product` | Every product will be AI-powered. The question is whether you'll build it right or ship a demo that falls apart in pr... |
+| `ai-wrapper-product` | Expert in building products that wrap AI APIs (OpenAI, Anthropic, etc.) into focused tools people will pay for. Not j... |
+| `algolia-search` | Expert patterns for Algolia search implementation, indexing strategies, React InstantSearch, and relevance tuning Use... |
+| `algorithmic-art` | Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when user... |
+| `analytics-tracking` | > |
+| `api-documentation-generator` | Generate comprehensive, developer-friendly API documentation from code, including endpoints, parameters, examples, an... |
+| `api-fuzzing-bug-bounty` | This skill should be used when the user asks to "test API security", "fuzz APIs", "find IDOR vulnerabilities", "test ... |
+| `api-patterns` | API design principles and decision-making. REST vs GraphQL vs tRPC selection, response formats, versioning, pagination. |
+| `api-security-best-practices` | Implement secure API design patterns including authentication, authorization, input validation, rate limiting, and pr... |
+| `app-builder` | Main application building orchestrator. Creates full-stack applications from natural language requests. Determines pr... |
+| `app-store-optimization` | Complete App Store Optimization (ASO) toolkit for researching, optimizing, and tracking mobile app performance on App... |
+| `architecture` | Architectural decision-making framework. Requirements analysis, trade-off evaluation, ADR documentation. Use when mak... |
+| `artifacts-builder` | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologie... |
+| `autonomous-agent-patterns` | Design patterns for building autonomous coding agents. Covers tool integration, permission systems, browser automatio... |
+| `autonomous-agents` | Autonomous agents are AI systems that can independently decompose goals, plan actions, execute tools, and self-correc... |
+| `avalonia-layout-zafiro` | Guidelines for modern Avalonia UI layout using Zafiro.Avalonia, emphasizing shared styles, generic components, and av... |
+| `avalonia-viewmodels-zafiro` | Optimal ViewModel and Wizard creation patterns for Avalonia using Zafiro and ReactiveUI. |
+| `avalonia-zafiro-development` | Mandatory skills, conventions, and behavioral rules for Avalonia UI development using the Zafiro toolkit. |
+| `aws-penetration-testing` | This skill should be used when the user asks to "pentest AWS", "test AWS security", "enumerate IAM", "exploit cloud i... |
+| `aws-serverless` | Specialized skill for building production-ready serverless applications on AWS. Covers Lambda functions, API Gateway,... |
+| `azure-functions` | Expert patterns for Azure Functions development including isolated worker model, Durable Functions orchestration, col... |
+| `backend-dev-guidelines` | Opinionated backend development standards for Node.js + Express + TypeScript microservices. Covers layered architectu... |
+| `backend-patterns` | Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express... |
+| `baoyu-article-illustrator` | Analyzes article structure, identifies positions requiring visual aids, generates illustrations with Type × Style two... |
+| `baoyu-comic` | Knowledge comic creator supporting multiple art styles and tones. Creates original educational comics with detailed p... |
+| `baoyu-compress-image` | Compresses images to WebP (default) or PNG with automatic tool selection. Use when user asks to "compress image", "op... |
+| `baoyu-cover-image` | Generates article cover images with 5 dimensions (type, palette, rendering, text, mood) combining 9 color palettes an... |
+| `baoyu-danger-gemini-web` | Generates images and text via reverse-engineered Gemini Web API. Supports text generation, image generation from prom... |
+| `baoyu-danger-x-to-markdown` | Converts X (Twitter) tweets and articles to markdown with YAML front matter. Uses reverse-engineered API requiring us... |
+| `baoyu-image-gen` | AI image generation with OpenAI and Google APIs. Supports text-to-image, reference images, aspect ratios, and paralle... |
+| `baoyu-infographic` | Generates professional infographics with 20 layout types and 17 visual styles. Analyzes content, recommends layout×st... |
+| `baoyu-post-to-wechat` | Posts content to WeChat Official Account (微信公众号) via Chrome CDP automation. Supports article posting (文章) with full m... |
+| `baoyu-post-to-x` | Posts content and articles to X (Twitter). Supports regular posts with images/videos and X Articles (long-form Markdo... |
+| `baoyu-slide-deck` | Generates professional slide deck images from content. Creates outlines with style instructions, then generates indiv... |
+| `baoyu-url-to-markdown` | Fetch any URL and convert to markdown using Chrome CDP. Supports two modes - auto-capture on page load, or wait for u... |
+| `baoyu-xhs-images` | Generates Xiaohongshu (Little Red Book) infographic series with 9 visual styles and 6 layouts. Breaks content into 1-... |
+| `bash-linux` | Bash/Linux terminal patterns. Critical commands, piping, error handling, scripting. Use when working on macOS or Linu... |
+| `bdi-mental-states` | This skill should be used when the user asks to "model agent mental states", "implement BDI architecture", "create be... |
+| `behavioral-modes` | AI operational modes (brainstorm, implement, debug, review, teach, ship, orchestrate). Use to adapt behavior based on... |
+| `blockrun` | Use when user needs capabilities Claude lacks (image generation, real-time X/Twitter data) or explicitly requests ext... |
+| `brainstorming` | > |
+| `brand-guidelines` | Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthrop... |
+| `broken-authentication` | This skill should be used when the user asks to "test for broken authentication vulnerabilities", "assess session man... |
+| `browser-automation` | Browser automation powers web testing, scraping, and AI agent interactions. The difference between a flaky script and... |
+| `browser-extension-builder` | Expert in building browser extensions that solve real problems - Chrome, Firefox, and cross-browser extensions. Cover... |
+| `bullmq-specialist` | BullMQ expert for Redis-backed job queues, background processing, and reliable async execution in Node.js/TypeScript ... |
+| `bun-development` | Modern JavaScript/TypeScript development with Bun runtime. Covers package management, bundling, testing, and migratio... |
+| `burp-suite-testing` | This skill should be used when the user asks to "intercept HTTP traffic", "modify web requests", "use Burp Suite for ... |
+| `busybox-on-windows` | How to use a Win32 build of BusyBox to run many of the standard UNIX command line tools on Windows. |
+| `canvas-design` | Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the us... |
+| `changelog-generator` | Automatically creates user-facing changelogs from git commits by analyzing commit history, categorizing changes, and ... |
+| `ciphey` | Automatic decryption and decoding tool using AI. Use when user says "解密", "decrypt", "decode", "crack", "破解密码", or pr... |
+| `claude-code-guide` | Master guide for using Claude Code effectively. Includes configuration templates, prompting strategies "Thinking" key... |
+| `clean-code` | Pragmatic coding standards - concise, direct, no over-engineering, no unnecessary comments |
+| `clerk-auth` | Expert patterns for Clerk auth implementation, middleware, organizations, webhooks, and user sync Use when: adding au... |
+| `clickhouse-io` | ClickHouse database patterns, query optimization, analytics, and data engineering best practices for high-performance... |
+| `cloud-penetration-testing` | This skill should be used when the user asks to "perform cloud penetration testing", "assess Azure or AWS or GCP secu... |
+| `code-review-checklist` | Comprehensive checklist for conducting thorough code reviews covering functionality, security, performance, and maint... |
+| `codex-review` | Professional code review with auto CHANGELOG generation, integrated with Codex AI |
+| `coding-standards` | Universal coding standards, best practices, and patterns for TypeScript, JavaScript, React, and Node.js development. |
+| `competitive-ads-extractor` | Extracts and analyzes competitors' ads from ad libraries (Facebook, LinkedIn, etc.) to understand what messaging, pro... |
+| `competitor-alternatives` | When the user wants to create competitor comparison or alternative pages for SEO and sales enablement. Also use when ... |
+| `computer-use-agents` | Build AI agents that interact with computers like humans do - viewing screens, moving cursors, clicking buttons, and ... |
+| `concise-planning` | Use when a user asks for a plan for a coding task, to generate a clear, actionable, and atomic checklist. |
+| `connect` | Connect Claude to any app. Send emails, create issues, post messages, update databases - take real actions across Gma... |
+| `content-creator` | Create SEO-optimized marketing content with consistent brand voice. Includes brand voice analyzer, SEO optimizer, con... |
+| `content-research-writer` | Assists in writing high-quality content by conducting research, adding citations, improving hooks, iterating on outli... |
+| `context-compression` | This skill should be used when the user asks to "compress context", "summarize conversation history", "implement comp... |
+| `context-degradation` | This skill should be used when the user asks to "diagnose context problems", "fix lost-in-middle issues", "debug agen... |
+| `context-fundamentals` | This skill should be used when the user asks to "understand context", "explain context windows", "design agent archit... |
+| `context-optimization` | This skill should be used when the user asks to "optimize context", "reduce token costs", "improve context efficiency... |
+| `context-window-management` | Strategies for managing LLM context windows including summarization, trimming, routing, and avoiding context rot Use ... |
+| `context7-auto-research` | Automatically fetch latest library/framework documentation for Claude Code via Context7 API |
+| `continuous-learning` | Automatically extract reusable patterns from Claude Code sessions and save them as learned skills for future use. |
+| `conversation-memory` | Persistent memory systems for LLM conversations including short-term, long-term, and entity-based memory Use when: co... |
+| `copy-editing` | When the user wants to edit, review, or improve existing marketing copy. Also use when the user mentions 'edit this c... |
+| `copywriting` | > |
+| `core-components` | Core component library and design system patterns. Use when building UI, using design tokens, or working with the com... |
+| `crewai` | Expert in CrewAI - the leading role-based multi-agent framework used by 60% of Fortune 500 companies. Covers agent de... |
+| `d3-viz` | Creating interactive data visualisations using d3.js. This skill should be used when creating custom charts, graphs, ... |
+| `daily-news-report` | 基于预设 URL 列表抓取内容，筛选高质量技术信息并生成每日 Markdown 报告。 |
+| `database-design` | Database design principles and decision-making. Schema design, indexing strategy, ORM selection, serverless databases. |
+| `deployment-procedures` | Production deployment principles and decision-making. Safe deployment workflows, rollback strategies, and verificatio... |
+| `design-orchestration` | > |
+| `developer-growth-analysis` | Analyzes your recent Claude Code chat history to identify coding patterns, development gaps, and areas for improvemen... |
+| `discord-bot-architect` | Specialized skill for building production-ready Discord bots. Covers Discord.js (JavaScript) and Pycord (Python), gat... |
+| `dispatching-parallel-agents` | Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies |
+| `doc-coauthoring` | Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation,... |
+| `docker-expert` | Docker containerization expert with deep knowledge of multi-stage builds, image optimization, container security, Doc... |
+| `documentation-templates` | Documentation templates and structure guidelines. README, API docs, code comments, and AI-friendly documentation. |
+| `docx-official` | Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preserv... |
+| `domain-name-brainstormer` | Generates creative domain name ideas for your project and checks availability across multiple TLDs (.com, .io, .dev, ... |
+| `email-sequence` | When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email ... |
+| `email-systems` | Email has the highest ROI of any marketing channel. $36 for every $1 spent. Yet most startups treat it as an aftertho... |
+| `environment-setup-guide` | Guide developers through setting up development environments with proper tools, dependencies, and configurations |
+| `ethical-hacking-methodology` | This skill should be used when the user asks to "learn ethical hacking", "understand penetration testing lifecycle", ... |
+| `evaluation` | This skill should be used when the user asks to "evaluate agent performance", "build test framework", "measure agent ... |
+| `exa-search` | Semantic search, similar content discovery, and structured research using Exa API |
+| `executing-plans` | Use when you have a written implementation plan to execute in a separate session with review checkpoints |
+| `file-organizer` | Intelligently organizes files and folders by understanding context, finding duplicates, and suggesting better organiz... |
+| `file-path-traversal` | This skill should be used when the user asks to "test for directory traversal", "exploit path traversal vulnerabiliti... |
+| `file-uploads` | Expert at handling file uploads and cloud storage. Covers S3, Cloudflare R2, presigned URLs, multipart uploads, and i... |
+| `filesystem-context` | This skill should be used when the user asks to "offload context to files", "implement dynamic context discovery", "u... |
+| `find-skills` | Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is... |
+| `finishing-a-development-branch` | Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides comple... |
+| `firebase` | Firebase gives you a complete backend in minutes - auth, database, storage, functions, hosting. But the ease of setup... |
+| `firecrawl-scraper` | Deep web scraping, screenshots, PDF parsing, and website crawling using Firecrawl API |
+| `form-cro` | > |
+| `free-tool-strategy` | When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or b... |
+| `frontend-design` | Create distinctive, production-grade frontend interfaces with intentional aesthetics, high craft, and non-generic vis... |
+| `frontend-dev-guidelines` | Opinionated frontend development standards for modern React + TypeScript applications. Covers Suspense-first data fet... |
+| `frontend-patterns` | Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices. |
+| `game-development` | Game development orchestrator. Routes to platform-specific skills based on project needs. |
+| `gcp-cloud-run` | Specialized skill for building production-ready serverless applications on GCP. Covers Cloud Run services (containeri... |
+| `geo-fundamentals` | Generative Engine Optimization for AI search engines (ChatGPT, Claude, Perplexity). |
+| `git-pushing` | Stage, commit, and push git changes with conventional commit messages. Use when user wants to commit and push changes... |
+| `github-workflow-automation` | Automate GitHub workflows with AI assistance. Includes PR reviews, issue triage, CI/CD integration, and Git operation... |
+| `graphql` | GraphQL gives clients exactly the data they need - no more, no less. One endpoint, typed schema, introspection. But t... |
+| `hosted-agents` | This skill should be used when the user asks to "build background agent", "create hosted coding agent", "set up sandb... |
+| `html-injection-testing` | This skill should be used when the user asks to "test for HTML injection", "inject HTML into web pages", "perform HTM... |
+| `hubspot-integration` | Expert patterns for HubSpot CRM integration including OAuth authentication, CRM objects, associations, batch operatio... |
+| `i18n-localization` | Internationalization and localization patterns. Detecting hardcoded strings, managing translations, locale files, RTL... |
+| `idor-testing` | This skill should be used when the user asks to "test for insecure direct object references," "find IDOR vulnerabilit... |
+| `image-enhancer` | Improves the quality of images, especially screenshots, by enhancing resolution, sharpness, and clarity. Perfect for ... |
+| `inngest` | Inngest expert for serverless-first background jobs, event-driven workflows, and durable execution without managing q... |
+| `interactive-portfolio` | Expert in building portfolios that actually land jobs and clients - not just showing work, but creating memorable exp... |
+| `internal-comms` | A set of resources to help me write all kinds of internal communications, using the formats that my company likes to ... |
+| `invoice-organizer` | Automatically organizes invoices and receipts for tax preparation by reading messy files, extracting key information,... |
+| `javascript-mastery` | Comprehensive JavaScript reference covering 33+ essential concepts every developer should know. From fundamentals lik... |
+| `kaizen` | Guide for continuous improvement, error proofing, and standardization. Use this skill when the user wants to improve ... |
+| `langfuse` | Expert in Langfuse - the open-source LLM observability platform. Covers tracing, prompt management, evaluation, datas... |
+| `langgraph` | Expert in LangGraph - the production-grade framework for building stateful, multi-actor AI applications. Covers graph... |
+| `langsmith-fetch` | Debug LangChain and LangGraph agents by fetching execution traces from LangSmith Studio. Use when debugging agent beh... |
+| `last30days` | Research a topic from the last 30 days on Reddit + X + Web, become an expert, and write copy-paste-ready prompts for ... |
+| `launch-strategy` | When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user menti... |
+| `lead-research-assistant` | Identifies high-quality leads for your product or service by analyzing your business, searching for target companies,... |
+| `lint-and-validate` | Automatic quality control, linting, and static analysis procedures. Use after every code modification to ensure synta... |
+| `linux-privilege-escalation` | This skill should be used when the user asks to "escalate privileges on Linux", "find privesc vectors on Linux system... |
+| `linux-shell-scripting` | This skill should be used when the user asks to "create bash scripts", "automate Linux tasks", "monitor system resour... |
+| `llm-app-patterns` | Production-ready patterns for building LLM applications. Covers RAG pipelines, agent architectures, prompt IDEs, and ... |
+| `loki-mode` | Multi-agent autonomous startup system for Claude Code. Triggers on "Loki Mode". Orchestrates 100+ specialized agents ... |
+| `marketing-ideas` | Provide proven marketing strategies and growth ideas for SaaS and software products, prioritized using a marketing fe... |
+| `marketing-psychology` | Apply behavioral science and mental models to marketing decisions, prioritized using a psychological leverage and fea... |
+| `mcp-builder` | Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external servi... |
+| `meeting-insights-analyzer` | Analyzes meeting transcripts and recordings to uncover behavioral patterns, communication insights, and actionable fe... |
+| `memory-systems` | This skill should be used when the user asks to "implement agent memory", "persist state across sessions", "build kno... |
+| `metasploit-framework` | This skill should be used when the user asks to "use Metasploit for penetration testing", "exploit vulnerabilities wi... |
+| `micro-saas-launcher` | Expert in launching small, focused SaaS products fast - the indie hacker approach to building profitable software. Co... |
+| `mobile-design` | Mobile-first design and engineering doctrine for iOS and Android apps. Covers touch interaction, performance, platfor... |
+| `moodle-external-api-development` | Create custom external web service APIs for Moodle LMS. Use when implementing web services for course management, use... |
+| `multi-agent-brainstorming` | > |
+| `multi-agent-patterns` | This skill should be used when the user asks to "design multi-agent system", "implement supervisor pattern", "create ... |
+| `neon-postgres` | Expert patterns for Neon serverless Postgres, branching, connection pooling, and Prisma/Drizzle integration Use when:... |
+| `nestjs-expert` | Nest.js framework expert specializing in module architecture, dependency injection, middleware, guards, interceptors,... |
+| `network-101` | This skill should be used when the user asks to "set up a web server", "configure HTTP or HTTPS", "perform SNMP enume... |
+| `nextjs-best-practices` | Next.js App Router principles. Server Components, data fetching, routing patterns. |
+| `nextjs-supabase-auth` | Expert integration of Supabase Auth with Next.js App Router Use when: supabase auth next, authentication next.js, log... |
+| `nodejs-best-practices` | Node.js development principles and decision-making. Framework selection, async patterns, security, and architecture. ... |
+| `nosql-expert` | Expert guidance for distributed NoSQL databases (Cassandra, DynamoDB). Focuses on mental models, query-first modeling... |
+| `notebooklm` | Use this skill to query your Google NotebookLM notebooks directly from Claude Code for source-grounded, citation-back... |
+| `notion-template-business` | Expert in building and selling Notion templates as a business - not just making templates, but building a sustainable... |
+| `obsidian-clipper-template-creator` | Guide for creating templates for the Obsidian Web Clipper. Use when you want to create a new clipping template, under... |
+| `onboarding-cro` | When the user wants to optimize post-signup onboarding, user activation, first-run experience, or time-to-value. Also... |
+| `page-cro` | > |
+| `paid-ads` | When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/... |
+| `parallel-agents` | Multi-agent orchestration patterns. Use when multiple independent tasks can run with different domain expertise or wh... |
+| `paywall-upgrade-cro` | When the user wants to create or optimize in-app paywalls, upgrade screens, upsell modals, or feature gates. Also use... |
+| `pdf-official` | Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents... |
+| `pentest-checklist` | This skill should be used when the user asks to "plan a penetration test", "create a security assessment checklist", ... |
+| `pentest-commands` | This skill should be used when the user asks to "run pentest commands", "scan with nmap", "use metasploit exploits", ... |
+| `performance-profiling` | Performance profiling principles. Measurement, analysis, and optimization techniques. |
+| `personal-tool-builder` | Expert in building custom tools that solve your own problems first. The best products often start as personal tools -... |
+| `plaid-fintech` | Expert patterns for Plaid API integration including Link token flows, transactions sync, identity verification, Auth ... |
+| `plan-writing` | Structured task planning with clear breakdowns, dependencies, and verification criteria. Use when implementing featur... |
+| `planning-with-files` | Implements Manus-style file-based planning for complex tasks. Creates task_plan.md, findings.md, and progress.md. Use... |
+| `playwright-skill` | Complete browser automation with Playwright. Auto-detects dev servers, writes clean test scripts to /tmp. Test pages,... |
+| `popup-cro` | Create and optimize popups, modals, overlays, slide-ins, and banners to increase conversions without harming user exp... |
+| `postgres-best-practices` | Postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimi... |
+| `powershell-windows` | PowerShell Windows patterns. Critical pitfalls, operator syntax, error handling. |
+| `pptx-official` | Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Cre... |
+| `pricing-strategy` | Design pricing, packaging, and monetization strategies based on value, customer willingness to pay, and growth object... |
+| `prisma-expert` | Prisma ORM expert for schema design, migrations, query optimization, relations modeling, and database operations. Use... |
+| `privilege-escalation-methods` | This skill should be used when the user asks to "escalate privileges", "get root access", "become administrator", "pr... |
+| `product-manager-toolkit` | Comprehensive toolkit for product managers including RICE prioritization, customer interview analysis, PRD templates,... |
+| `production-code-audit` | Autonomously deep-scan entire codebase line-by-line, understand architecture and patterns, then systematically transf... |
+| `programmatic-seo` | > |
+| `project-development` | This skill should be used when the user asks to "start an LLM project", "design batch pipeline", "evaluate task-model... |
+| `project-guidelines-example` | Reference this skill when working on the specific project it's designed for. Project skills contain: - Architecture o... |
+| `prompt-caching` | Caching strategies for LLM prompts including Anthropic prompt caching, response caching, and CAG (Cache Augmented Gen... |
+| `prompt-engineer` | Expert in designing effective prompts for LLM-powered applications. Masters prompt structure, context management, out... |
+| `prompt-engineering` | Expert guide on prompt engineering patterns, best practices, and optimization techniques. Use when user wants to impr... |
+| `prompt-library` | Curated collection of high-quality prompts for various use cases. Includes role-based prompts, task-specific template... |
+| `python-patterns` | Python development principles and decision-making. Framework selection, async patterns, type hints, project structure... |
+| `raffle-winner-picker` | Picks random winners from lists, spreadsheets, or Google Sheets for giveaways, raffles, and contests. Ensures fair, u... |
+| `rag-engineer` | Expert in building Retrieval-Augmented Generation systems. Masters embedding models, vector databases, chunking strat... |
+| `rag-implementation` | Retrieval-Augmented Generation patterns including chunking, embeddings, vector stores, and retrieval optimization Use... |
+| `ralph-loop` | Autonomous development loop for completing all remaining tasks. Use when user says "全部完成", "完成所有任务", "finish all", "c... |
+| `react-best-practices` | React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing... |
+| `react-patterns` | Modern React patterns and principles. Hooks, composition, performance, TypeScript best practices. |
+| `react-ui-patterns` | Modern React UI patterns for loading states, error handling, and data fetching. Use when building UI components, hand... |
+| `receiving-code-review` | Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or tec... |
+| `red-team-tactics` | Red team tactics principles based on MITRE ATT&CK. Attack phases, detection evasion, reporting. |
+| `red-team-tools` | This skill should be used when the user asks to "follow red team methodology", "perform bug bounty hunting", "automat... |
+| `referral-program` | When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy.... |
+| `release-skills` | Universal release workflow. Auto-detects version files and changelogs. Supports Node.js, Python, Rust, Claude Plugin,... |
+| `remotion-best-practices` | Best practices for Remotion - Video creation in React |
+| `requesting-code-review` | Use when completing tasks, implementing major features, or before merging to verify work meets requirements |
+| `research-engineer` | An uncompromising Academic Research Engineer. Operates with absolute scientific rigor, objective criticism, and zero ... |
+| `salesforce-development` | Expert patterns for Salesforce platform development including Lightning Web Components (LWC), Apex triggers and class... |
+| `scanning-tools` | This skill should be used when the user asks to "perform vulnerability scanning", "scan networks for open ports", "as... |
+| `schema-markup` | > |
+| `scroll-experience` | Expert in building immersive scroll-driven experiences - parallax storytelling, scroll animations, interactive narrat... |
+| `security-review` | Use this skill when adding authentication, handling user input, working with secrets, creating API endpoints, or impl... |
+| `segment-cdp` | Expert patterns for Segment Customer Data Platform including Analytics.js, server-side tracking, tracking plans with ... |
+| `senior-architect` | Comprehensive software architecture skill for designing scalable, maintainable systems using ReactJS, NextJS, NodeJS,... |
+| `senior-fullstack` | Comprehensive fullstack development skill for building complete web applications with React, Next.js, Node.js, GraphQ... |
+| `seo-audit` | > |
+| `seo-fundamentals` | > |
+| `server-management` | Server management principles and decision-making. Process management, monitoring strategy, and scaling decisions. Tea... |
+| `shodan-reconnaissance` | This skill should be used when the user asks to "search for exposed devices on the internet," "perform Shodan reconna... |
+| `shopify-apps` | Expert patterns for Shopify app development including Remix/React Router apps, embedded apps with App Bridge, webhook... |
+| `shopify-development` | / |
+| `signup-flow-cro` | When the user wants to optimize signup, registration, account creation, or trial activation flows. Also use when the ... |
+| `skill-creator` | Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an ex... |
+| `skill-developer` | Create and manage Claude Code skills following Anthropic best practices. Use when creating new skills, modifying skil... |
+| `skill-share` | A skill that creates new Claude skills and automatically shares them on Slack using Rube for seamless team collaborat... |
+| `slack-bot-builder` | Build Slack apps using the Bolt framework across Python, JavaScript, and Java. Covers Block Kit for rich UIs, interac... |
+| `slack-gif-creator` | Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and a... |
+| `smtp-penetration-testing` | This skill should be used when the user asks to "perform SMTP penetration testing", "enumerate email users", "test fo... |
+| `social-content` | When the user wants help creating, scheduling, or optimizing social media content for LinkedIn, Twitter/X, Instagram,... |
+| `software-architecture` | Guide for quality focused software architecture. This skill should be used when users want to write code, design arch... |
+| `spec-analyze` | Perform non-destructive cross-artifact consistency and quality analysis across spec.md, plan.md, and tasks.md. Use wh... |
+| `spec-checklist` | Generate custom quality checklists that validate REQUIREMENTS quality (not implementation). Use when user says "/spec... |
+| `spec-clarify` | Identify underspecified areas in a feature spec by asking up to 5 targeted clarification questions and encoding answe... |
+| `spec-constitution` | Create or update the project constitution with core principles and governance rules. Use when user says "/spec-consti... |
+| `spec-implement` | Execute implementation by processing tasks defined in tasks.md. Use when user says "/spec-implement", "implement the ... |
+| `spec-plan` | Execute implementation planning workflow to generate design artifacts (research.md, data-model.md, contracts/, quicks... |
+| `spec-specify` | Create or update a feature specification from a natural language description. Use when user says "/spec-specify", "cr... |
+| `spec-tasks` | Generate actionable, dependency-ordered tasks.md organized by user story. Use when user says "/spec-tasks", "create t... |
+| `spec-taskstoissues` | Convert tasks.md into GitHub issues with proper dependencies. Use when user says "/spec-taskstoissues", "create GitHu... |
+| `specify-resources` | Shared resources (scripts, templates) for Spec-Driven Development workflow. This skill is a dependency for all spec-*... |
+| `sql-injection-testing` | This skill should be used when the user asks to "test for SQL injection vulnerabilities", "perform SQLi attacks", "by... |
+| `sqlmap-database-pentesting` | This skill should be used when the user asks to "automate SQL injection testing," "enumerate database structure," "ex... |
+| `ssh-penetration-testing` | This skill should be used when the user asks to "pentest SSH services", "enumerate SSH configurations", "brute force ... |
+| `strategic-compact` | Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary... |
+| `stripe-integration` | Get paid from day one. Payments, subscriptions, billing portal, webhooks, metered billing, Stripe Connect. The comple... |
+| `subagent-driven-development` | Use when executing implementation plans with independent tasks in the current session |
+| `systematic-debugging` | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes |
+| `tailored-resume-generator` | Analyzes job descriptions and generates tailored resumes that highlight relevant experience, skills, and achievements... |
+| `tailwind-patterns` | Tailwind CSS v4 principles. CSS-first configuration, container queries, modern patterns, design token architecture. |
+| `tavily-web` | Web search, content extraction, crawling, and research capabilities using Tavily API |
+| `tdd-workflow` | Test-Driven Development workflow principles. RED-GREEN-REFACTOR cycle. |
+| `telegram-bot-builder` | Expert in building Telegram bots that solve real problems - from simple automation to complex AI-powered bots. Covers... |
+| `telegram-mini-app` | Expert in building Telegram Mini Apps (TWA) - web apps that run inside Telegram with native-like experience. Covers t... |
+| `template-skill` | Replace with description of the skill and when Claude should use it. |
+| `test-driven-development` | Use when implementing any feature or bugfix, before writing implementation code |
+| `test-fixing` | Run tests and systematically fix all failing tests using smart error grouping. Use when user asks to fix failing test... |
+| `testing-patterns` | Jest testing patterns, factory functions, mocking strategies, and TDD workflow. Use when writing unit tests, creating... |
+| `theme-factory` | Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc.... |
+| `tool-design` | This skill should be used when the user asks to "design agent tools", "create tool descriptions", "reduce tool comple... |
+| `top-web-vulnerabilities` | This skill should be used when the user asks to "identify web application vulnerabilities", "explain common security ... |
+| `trigger-dev` | Trigger.dev expert for background jobs, AI workflows, and reliable async execution with excellent developer experienc... |
+| `twilio-communications` | Build communication features with Twilio: SMS messaging, voice calls, WhatsApp Business API, and user verification (2... |
+| `typescript-expert` | >- |
+| `ui-ux-pro-max` | UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks (React, Next.js, Vue, Svelte... |
+| `unzip-crx` | Extract Chrome extension (.crx) files. Use when user needs to unzip, extract, or decompress a .crx file. Handles Chro... |
+| `upstash-qstash` | Upstash QStash expert for serverless message queues, scheduled jobs, and reliable HTTP-based task delivery without ma... |
+| `using-git-worktrees` | Use when starting feature work that needs isolation from current workspace or before executing implementation plans -... |
+| `using-superpowers` | Use when starting any conversation - establishes how to find and use skills, requiring Skill tool invocation before A... |
+| `vercel-deployment` | Expert knowledge for deploying to Vercel with Next.js Use when: vercel, deploy, deployment, hosting, production. |
+| `vercel-react-best-practices` | React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing... |
+| `verification-before-completion` | Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running ver... |
+| `verification-loop` | Invoke this skill: - After completing a feature or significant code change - Before creating a PR - When you want to ... |
+| `video-downloader` | Download YouTube videos with customizable quality and format options. Use this skill when the user asks to download, ... |
+| `viral-generator-builder` | Expert in building shareable generator tools that go viral - name generators, quiz makers, avatar creators, personali... |
+| `voice-agents` | Voice agents represent the frontier of AI interaction - humans speaking naturally with AI systems. The challenge isn'... |
+| `voice-ai-development` | Expert in building voice AI applications - from real-time voice agents to voice-enabled apps. Covers OpenAI Realtime ... |
+| `voice-ai-engine-development` | Build real-time conversational AI voice engines using async worker pipelines, streaming transcription, LLM agents, an... |
+| `vulnerability-scanner` | Advanced vulnerability analysis principles. OWASP 2025, Supply Chain Security, attack surface mapping, risk prioritiz... |
+| `web-artifacts-builder` | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologie... |
+| `web-design-guidelines` | Review UI code for Web Interface Guidelines compliance. Use when asked to "review my UI", "check accessibility", "aud... |
+| `web-performance-optimization` | Optimize website and web application performance including loading speed, Core Web Vitals, bundle size, caching strat... |
+| `webapp-testing` | Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functio... |
+| `windows-privilege-escalation` | This skill should be used when the user asks to "escalate privileges on Windows," "find Windows privesc vectors," "en... |
+| `wireshark-analysis` | This skill should be used when the user asks to "analyze network traffic with Wireshark", "capture packets for troubl... |
+| `wordpress-penetration-testing` | This skill should be used when the user asks to "pentest WordPress sites", "scan WordPress for vulnerabilities", "enu... |
+| `workflow-automation` | Workflow automation is the infrastructure that makes AI agents reliable. Without durable execution, a network hiccup ... |
+| `writing-plans` | Use when you have a spec or requirements for a multi-step task, before touching code |
+| `writing-skills` | Use when creating new skills, editing existing skills, or verifying skills work before deployment |
+| `xlsx-official` | Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and v... |
+| `xss-html-injection` | This skill should be used when the user asks to "test for XSS vulnerabilities", "perform cross-site scripting attacks... |
+| `zapier-make-patterns` | No-code automation democratizes workflow building. Zapier and Make (formerly Integromat) let non-developers automate ... |
 
 ---
 
@@ -411,4 +378,4 @@ ls ~/.claude/skills/
 
 ---
 
-> 📖 本文档最后更新: 2026-01-27
+> 📖 本文档最后更新: 2026-01-28
