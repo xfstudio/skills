@@ -1,8 +1,15 @@
 ---
 name: evaluation
-description: This skill should be used when the user asks to "evaluate agent performance", "build test framework", "measure agent quality", "create evaluation rubrics", or mentions LLM-as-judge, multi-dimensional evaluation, agent testing, or quality gates for agent pipelines.
+description: "Build evaluation frameworks for agent systems"
+source: "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/evaluation"
+risk: safe
 ---
 
+## When to Use This Skill
+
+Build evaluation frameworks for agent systems
+
+Use this skill when working with build evaluation frameworks for agent systems.
 # Evaluation Methods for Agent Systems
 
 Evaluation of agent systems requires different approaches than traditional software or even standard language model applications. Agents make dynamic decisions, are non-deterministic between runs, and often lack single correct answers. Effective evaluation must account for these characteristics while providing actionable feedback. A robust evaluation framework enables continuous improvement, catches regressions, and validates that context engineering choices achieve intended effects.
