@@ -1,0 +1,3 @@
+interface:
+  display_name: "淘宝技能上架信息同步"
+  short_description: "核对淘宝技能上架状态，并同步生意管家技能包的可验证信息与核对时间"

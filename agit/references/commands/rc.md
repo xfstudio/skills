@@ -1,0 +1,56 @@
+---
+name: agit-rc
+description: Start and manage owner-authorized remote agent sessions.
+---
+
+# Remote control
+
+When the user wants to continue an encrypted cloned session through Workspaces, first follow
+[privacy](privacy.md#guide-the-user-through-password-operations) for any required recovery.
+Explain that the owner supplies the repository viewing password and that the user enters it
+with the provided CLI unlock command on the RC execution machine. Then prepare the selected
+session under its normal resume/run rules before attaching through RC. Starting the daemon
+alone needs no viewing password and does not decrypt a cloned session; recovered originals
+remain subject to RC output protection.
+
+Run this on the machine where your code and agent runtime are installed:
+
+```sh
+agit login
+agit rc start --detach
+```
+
+Sign in to the same Hub account you use in Workspaces. Startup runs agitd, registers a Cloud device,
+and enables inbound control for your own account. Open the printed Workspaces URL with the
+same account, choose the device and a project folder, and start a conversation. No pairing
+code, separate enrollment command, or configuration edit is required.
+
+After signing in to a different account, run `agit rc start --detach` again. Startup
+replaces that Cloud's device registration and clears its previous executor access grants.
+The new account receives owner access; local history and other Cloud origins are preserved.
+Existing connections for the replaced registration close as the daemon reloads it.
+
+Other users need explicit device admission and executor access grants. Workspace membership
+alone does not grant access to a device. Authentication and authorization remain independent
+of tunnel transport.
+
+Use `agit rc start --detach` to run in the background. Local and SSH access stay available
+while Cloud registration or networking retries. Inspect `agit rc status` and the printed
+private daemon log when a device is not online. `agit rc stop` stops that daemon and its sessions.
+
+`agit rc local start --detach` is the outgoing controller startup used by Desktop. It does
+not enable inbound Cloud access. `agit rc cloud inbound --hub <origin> --enabled false`
+disables inbound access independently of outgoing control.
+
+Advanced device management: `agit rc list`, `agit rc revoke <device-id>`, and `agit rc cloud
+status --hub <origin>`. Registration is performed by `agit rc start`; there is no separate
+enrollment command. SSH uses `agit rc local bridge --ensure`.
+
+The peer executor supports native Windows, Linux and macOS. Windows uses a current-user local
+named pipe for owner RPC; Unix systems use a current-user local socket. Cloud peers use the
+same transport and session protocol on all three platforms.
+
+After revoking a device, sign in as its owner and run `agit rc start --detach` on that
+machine to reconnect intentionally. Startup replaces a revoked registration while keeping
+the device identity used by its workspaces. Healthy registrations keep their credentials;
+background connection retries cannot undo revocation.

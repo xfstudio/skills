@@ -1,0 +1,179 @@
+---
+name: agit-status
+description: Show current context, directory bindings, adopted sessions, and local Agent repo state.
+---
+
+# agit status
+
+## Purpose
+
+Answer "who am I, am I in a session, and is the repo synchronized?" It reports workspace bindings, adopted runtime sessions, local branches, and their relationship to fetched tracking refs.
+
+Default status reads local state without checking for updates, creating storage, or migrating history.
+Remote state means the refs already fetched locally. If interrupted storage recovery is pending,
+status refuses. Complete recovery through the original AgentGit store before inspecting status
+again; its normal `agit doctor` startup can recover supported local checkouts. Status does not
+change the migration rules for repositories linked from another store.
+
+## Synopsis
+
+```bash
+agit status
+```
+
+## Options
+
+| Option | Meaning |
+|---|---|
+| `--check-missing` | Also inspect runtime indexes for unadopted sessions; SQLite may maintain WAL sidecar files |
+| `--limit <n>` / `--offset <n>` | Page adopted sessions; limit 1–1000, default 8 for text and 100 for JSON |
+| `-y/--yes`, `-q/--quiet`, `-C/--directory`, `--no-color` | Common options; global `--json` emits the unified CLI JSON envelope |
+
+## Reading the output
+
+The explicit `--check-missing` option uses the runtime index readers and may cause SQLite to
+maintain its sidecar files. Use default status when inspection must leave local files unchanged.
+Neither form performs a startup migration or an update check.
+If the claim inventory is incomplete, `--check-missing` reports adoption as unavailable and skips
+the runtime indexes. An omitted or unreadable claim is not evidence that a session is unadopted.
+
+The adopted-session table names the complete runtime instance, recorded repository and branch,
+and the last commit currently observed on that branch. A superseded instance does not borrow its
+replacement's branch head. A retained merge exploration instance is labeled separately and does
+not borrow ordinary pending activity or the branch head; a superseded exploration instance keeps
+the superseded label. Displayed current claims are compared with bounded read-only native
+snapshots using the same unsettled-event semantics as working-state `agit diff`. Counts distinguish
+turns with pending activity from newly started turns; unclassified or incomplete native records
+remain explicit lower bounds. Missing, busy, stale, conflicting or oversized evidence is unavailable,
+never an inferred zero. Native text is not printed.
+
+Default status never opens a source runtime database through SQLite: even a read-only SQLite
+connection can create WAL coordination files. Codex inspection locates the full native identity
+in its JSONL tree without consulting the index. OpenCode reads pinned database and sidecar handles
+under cooperating locks, verifies the committed WAL frontier, and queries an owned in-memory image
+in a supervised worker. It does not write the source database, WAL/SHM files, or temporary snapshots.
+Missing, changing, unsafe, or over-budget evidence remains unavailable without recovery.
+
+Each page inspects native details for at most its first eight session rows. Additional
+rows preserve their identities and say `unavailable: per-page inspection limit`; use
+`--offset` to inspect another page. Text and JSON share this bound. JSON session rows
+include `last_commit` (null when unavailable), `pending_activity`, `local_instance`, and `project`.
+`sessions.incomplete=true` means the total is only the number of claims observed, not a verified
+current count or a guaranteed lower bound. A failed final inventory recheck also prevents
+unadopted-session classification.
+
+The `project` column labels `here` when the recorded cwd equals the current directory. Otherwise,
+`same-repo` matches the recorded branch's code-origin anchor to the current code repository's origin;
+matching Agent repository names is not sufficient. `other` means no recorded match, including a
+code repository without a configured origin. Missing or invalid inspection evidence is
+`unavailable: project evidence`. The comparison uses only displayed rows, rechecks the branch and
+origin, and never chooses a session target. A cwd match takes precedence and needs no Git lookup.
+Rows beyond the page's detail allowance can still show `here`; other relations remain unavailable.
+Superseded and merge-exploration instances retain their recorded cwd relationship but do not borrow
+the current branch's code origin from a replacement or ordinary session.
+
+The session inventory and displayed-row inspections share command budgets. Status does not read
+undisplayed native transcripts, and it warns when the local claim inventory is incomplete. Only a
+missing Store is an empty inventory. An invalid, linked, or unreadable Store carrier remains
+incomplete, and `--check-missing` does not inspect runtime indexes in that state. The
+explicit `AGIT_SESSION` target uses this same snapshot for the runtime-identity veto. If the process
+carries a runtime identity and its claims cannot be inspected completely, the target is unavailable;
+runtime or directory discovery never supplies a replacement target. Without a runtime identity,
+the explicitly supplied target can still be displayed independently of the claim inventory. The
+"current claim" badge describes an ordinary stored identity that has not been superseded. "Busy claim
+update" observes a held local claim lock; "stale baseline" compares the materialized tip with the
+selected branch head. None of these badges proves a live native process or a remote instance.
+
+With `--json`, `result.value` contains typed selection, workspace binding,
+session identities, repository heads, and fetched-ref synchronization counts.
+`sessions.next_offset` continues the session page; it is null when no rows remain.
+Session IDs are complete and paired with their runtime, and superseded claims
+remain explicitly marked. A bound repository does not populate `selection`.
+`unadopted.checked=false` and `sessions=null` mean the optional index scan did
+not run; they are not evidence that every runtime session is adopted.
+
+Explicit discovery also works before the first adoption, without creating an
+AgentGit store. Runtime and native ID together identify a session; an adopted
+Claude ID does not hide an equal Codex ID. Known index failures are reported in
+`unadopted.errors` and mark `unadopted.incomplete=true`. Discovery reflects the
+runtime indexes available to this machine, rather than proving that no other
+conversation exists.
+
+- `no session target supplied through AGIT_SESSION`: no usable explicit process identity.
+- `runtime session`: the conversation a runtime session variable names (for example
+  `CODEBUDDY_SESSION_ID` in WorkBuddy), with `saved to` showing its active claim's
+  `<owner>/<repo>@<branch>`. It is display only and never becomes the command target.
+  When it is saved, a hint names `agit commit <target>` and `agit push <target>`; when it
+  is not, the hint names the import command with its native ID.
+- `bound repo`: the cwd's Agent repo route; it does not prove that a branch exists.
+
+JSON reports the same under `runtime_session`: `state` is `none`, `detected` or
+`ambiguous`; `session` holds `runtime`, `session_id`, `variable`, `managed` and a
+nullable `target` when exactly one conversation is named; `candidates` lists every
+named conversation. `managed` means the store holds ownership evidence for the
+conversation (an agent, branch, baseline or archive role); a hook placeholder or a
+`--link-only` link is not managed. A variable counts only when its runtime's transcript file exists,
+or when the runtime keeps sessions in a database status does not open. Nested runtimes
+inherit their parent's variables, so `ambiguous` means the environment cannot say which
+conversation this is; name it explicitly instead of choosing one.
+
+`--check-missing` leaves every session with a link out of its list, the current
+conversation included, and says so for the current conversation. The only unsaved
+candidate is not necessarily the current conversation.
+
+The repository table lists branches even when no runtime session has been adopted. Each row
+includes the last commit and its tracking ref. An explicit upstream takes precedence; otherwise
+a fetched `origin` branch with the same name supplies the comparison. Remote-only branches from
+any remote remain visible. Status does not contact those remotes.
+
+- `in sync`: the local branch and its known tracking ref identify the same commit.
+- `ahead`, `behind`, or `diverged`: complete local commit ancestry establishes the difference.
+- `no known tracking ref`: no upstream or same-name fetched `origin` branch is known locally.
+- `tracking ref unavailable locally`: the configured upstream is missing or cannot be mapped to a local ref; status does not substitute an origin branch.
+- `comparison unavailable`: local ancestry is missing, malformed, or exceeds the inspection budget.
+- `remote only`: a fetched remote branch has no corresponding local branch in the table.
+
+Status bounds the displayed rows and ancestry inspection. An incomplete display includes a warning;
+use `agit branch --repo <owner/repo> --all` to inspect another repository's refs. A missing tracking
+ref does not establish whether the branch has ever been published. Shallow or grafted history
+produces counts only when the immutable parent graph can be reconstructed completely.
+
+The merge transaction table shows the retained target, source, pick count and whether a summary
+is ready. It does not print the summary itself, infer that a merge agent is running, or complete
+an interrupted operation. Missing, malformed, changing or oversized transaction evidence is
+reported as unavailable; status never repairs or removes that evidence.
+
+The shared-file table covers registered checkouts of local Agent repositories, including session
+worktrees. It does not inspect shared-looking files in the current code repository. Eligible paths
+are `AGENTS.md`, `memory/` and `skills/`; ignored untracked files are excluded. The `staged` column
+compares the index with HEAD, including conflicts and deletions. The `local bytes` column compares
+regular files with their index blobs without executing Git filters, hooks or fsmonitor. It does
+not apply clean filters or line-ending conversion: a raw byte difference can remain even when
+Git would normalize the file to its index content. This view never claims Git-clean status.
+Only relative paths and states are printed, never file contents. Unsupported carriers, symlinks,
+changing metadata and exceeded budgets remain unavailable; known staged facts are retained when
+only the local file cannot be read. Checkouts, path records, displayed rows and file reads have
+command-wide limits. Incomplete inspection includes a warning and does not imply no changes.
+
+JSON v1 and v2 include the same bounded observations under `shared_files` and
+`merge_transactions`. Each page has `items` and an `incomplete` flag. Shared-file entries keep
+separate repository, branch, checkout path, relative file path, staged state and local-byte
+state fields. JSON preserves complete identity strings; terminal cells may be escaped or
+shortened. An unreadable checkout uses a null file path instead of pretending it has no changes.
+Merge entries retain the target/source refs and full frozen endpoint OIDs, numeric pick count
+and boolean summary readiness. Unavailable transaction fields are null with an explicit error.
+No summary or picked-event content is returned. `merge_transactions.repositories_omitted`
+counts repositories outside that inspection budget. An empty incomplete page proves neither
+unchanged shared files nor absence of a merge transaction.
+
+## Examples
+
+```bash
+agit status
+agit status --check-missing
+agit -C ~/Projects/p1 status
+```
+
+A bound repo does not select a session target. Use a full target or set `AGIT_SESSION` to
+an existing local branch. Use `new` to create a session or `import` to adopt one;
+`resume` continues an existing session. Verify `refs/heads/<branch>` before publishing it.

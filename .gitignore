@@ -67,3 +67,7 @@ walkthrough.md
 .agent/rules/
 .gemini/
 LOCAL_CONFIG.md
+
+# Local skill-manager state
+.trash/
+synced/
