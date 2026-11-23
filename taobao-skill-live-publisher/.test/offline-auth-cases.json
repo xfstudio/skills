@@ -1,0 +1,123 @@
+{
+  "base": {
+    "account": "test",
+    "publicAppId": "1",
+    "formalCode": "sample",
+    "editorUrl": "https://example.test/editor",
+    "hadListing": true,
+    "offlineBefore": true,
+    "wasListed": false,
+    "moreMenuBefore": [
+      "修改上架详情",
+      "编辑技能",
+      "版本管理",
+      "删除"
+    ],
+    "listingBefore": {
+      "mode": "1"
+    },
+    "existingMode": "定向订购",
+    "authorizationReadback": {
+      "complete": false,
+      "shops": [],
+      "unavailableWhileUnlisted": true
+    }
+  },
+  "cases": [
+    {
+      "name": "offline observed",
+      "patch": {},
+      "allowed": true
+    },
+    {
+      "name": "known list",
+      "patch": {
+        "authorizationReadback": {
+          "complete": true
+        }
+      },
+      "allowed": true
+    },
+    {
+      "name": "not offline",
+      "patch": {
+        "offlineBefore": false
+      },
+      "allowed": false
+    },
+    {
+      "name": "new listing",
+      "patch": {
+        "hadListing": false
+      },
+      "allowed": false
+    },
+    {
+      "name": "currently listed",
+      "patch": {
+        "wasListed": true
+      },
+      "allowed": false
+    },
+    {
+      "name": "menu available or paginated",
+      "patch": {
+        "moreMenuBefore": [
+          "修改上架详情",
+          "编辑技能",
+          "版本管理",
+          "删除",
+          "授权管理"
+        ]
+      },
+      "allowed": false
+    },
+    {
+      "name": "mode drift",
+      "patch": {
+        "listingBefore": {
+          "mode": "0"
+        }
+      },
+      "allowed": false
+    },
+    {
+      "name": "unknown mode",
+      "patch": {
+        "listingBefore": {}
+      },
+      "allowed": false
+    },
+    {
+      "name": "missing menus",
+      "patch": {
+        "moreMenuBefore": null
+      },
+      "allowed": false
+    },
+    {
+      "name": "unobserved unavailable",
+      "patch": {
+        "authorizationReadback": {
+          "complete": false
+        }
+      },
+      "allowed": false
+    },
+    {
+      "name": "string flag",
+      "patch": {
+        "offlineBefore": "true"
+      },
+      "allowed": false
+    },
+    {
+      "name": "missing mode and label",
+      "patch": {
+        "listingBefore": {},
+        "existingMode": null
+      },
+      "allowed": false
+    }
+  ]
+}

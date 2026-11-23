@@ -1,0 +1,3 @@
+interface:
+  display_name: "数字员工上架与更新"
+  short_description: "从飞书配置发布或更新 BM 与淘宝数字员工"

@@ -19,7 +19,7 @@ npx skills update xfstudio/skills
 
 ---
 
-## Skills 分类目录 (710 个)
+## Skills 分类目录 (713 个)
 
 ### 主要分类概览
 
@@ -37,7 +37,7 @@ npx skills update xfstudio/skills
 | 📊 数据与可视化 | 12 | 数据可视化、BI、ML、量化分析 |
 | 🎮 游戏开发 | 9 | Unity、Unreal、Godot、ECS |
 | 📝 文档与内容 | 25 | 技术写作、API 文档、营销文案 |
-| 🔧 工具与自动化 | 49 | CLI、脚本、爬虫、文件处理 |
+| 🔧 工具与自动化 | 52 | CLI、脚本、爬虫、文件处理 |
 | 🌐 Web3 区块链 | 3 | 智能合约、DeFi、NFT |
 | 💼 产品与营销 | 36 | 产品管理、增长、定价、SEO |
 | 🎓 学习与知识 | 10 | 研究工具、笔记系统 |
@@ -47,7 +47,7 @@ npx skills update xfstudio/skills
 | 📦 编程语言 | 28 | Python、Rust、Go、TypeScript |
 | 🔄 其他专业 | 158 | HR、法律、财务、行业特定 |
 
-**总计：710 个专业技能**
+**总计：713 个专业技能**
 
 ---
 
@@ -483,7 +483,7 @@ npx skills update xfstudio/skills
 | `writing-plans` | Use when you have a spec or requirements for a multi-step... | you have a spec or requirements for a multi-step task, be... |
 | `writing-skills` | Use when creating, updating, or improving agent skills. | creating, updating, or improving agent skills |
 
-### 🔧 工具与自动化 (49个)
+### 🔧 工具与自动化 (52个)
 
 | 技能名称 | 功能简述 | 触发条件 |
 |----------|----------|----------|
@@ -522,6 +522,9 @@ npx skills update xfstudio/skills
 | `skill-seekers` | -Automatically convert documentation websites, GitHub rep... |  |
 | `slack-bot-builder` | Build Slack apps using the Bolt framework across Python, ... | slack bot, slack app, bolt framework, block kit, slash co... |
 | `slack-gif-creator` | Knowledge and utilities for creating animated GIFs optimi... | users request animated GIFs for Slack like "make me a GIF... |
+| `taobao-bm-listing-sync` | Use when reconciling 淘宝开放平台技能上架状态 with BM 电商生意管家技能包, espe... |  |
+| `taobao-employee-live-publisher` | Use when a user asks Codex to create, update, version, or... |  |
+| `taobao-skill-live-publisher` | Use when the user wants Codex to prepare, preflight, crea... |  |
 | `telegram-bot-builder` | Expert in building Telegram bots that solve real problems... | telegram bot, bot api, telegram automation, chat bot tele... |
 | `telegram-mini-app` | Expert in building Telegram Mini Apps (TWA) - web apps th... | telegram mini app, TWA, telegram web app, TON app, mini app |
 | `tool-design` | Build tools that agents can use effectively, including ar... |  |
@@ -1007,10 +1010,10 @@ claude
 ## 🔄 更新日志
 
 ### 2026-11-23
-- ➕ 新增 31 个技能：钉钉 `dingtalk-*` 系列（16 个）、腾讯云 TokenHub `thcli-*` 系列（12 个）、`agit`、`reverse-engineer-anything`、`weread-skills`
+- ➕ 新增 34 个技能：钉钉 `dingtalk-*` 系列（16 个）、腾讯云 TokenHub `thcli-*` 系列（12 个）、`agit`、`reverse-engineer-anything`、`weread-skills`、淘宝开放平台 `taobao-*` 系列（3 个）
 - ✏️ 重命名 18 个技能（与上游名称对齐，如 `docx-official` → `docx`、`pdf-official` → `pdf`）
 - 🧹 移除 19 个重复或已下线的技能条目
-- 🔢 当前技能总数：710 个
+- 🔢 当前技能总数：713 个
 
 ### 2026-02-04
 - 📊 更新技能清单格式，新增触发条件列
