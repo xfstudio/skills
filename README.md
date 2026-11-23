@@ -19,7 +19,7 @@ npx skills update xfstudio/skills
 
 ---
 
-## Skills 分类目录 (698 个)
+## Skills 分类目录 (710 个)
 
 ### 主要分类概览
 
@@ -28,26 +28,26 @@ npx skills update xfstudio/skills
 | 🤖 AI 与智能代理 | 51 | LLM 应用、RAG、代理架构、提示工程 |
 | 🏗️ 架构与设计 | 35 | 系统架构、微服务、事件驱动、DDD |
 | 🔐 安全与渗透测试 | 50 | 漏洞扫描、渗透测试、安全审计 |
-| 💾 数据库与数据工程 | 24 | SQL/NoSQL、数据管道、向量数据库 |
-| 🎨 前端开发 | 34 | React、Next.js、UI/UX、组件库 |
-| ⚙️ 后端开发 | 36 | API 设计、微服务、认证、消息队列 |
+| 💾 数据库与数据工程 | 23 | SQL/NoSQL、数据管道、向量数据库 |
+| 🎨 前端开发 | 32 | React、Next.js、UI/UX、组件库 |
+| ⚙️ 后端开发 | 35 | API 设计、微服务、认证、消息队列 |
 | 📱 移动开发 | 8 | React Native、Flutter、iOS/Android |
-| ☁️ 云与 DevOps | 39 | K8s、CI/CD、监控、IaC、GitOps |
-| 🧪 测试与质量 | 41 | TDD、E2E、代码审查、性能测试 |
+| ☁️ 云与 DevOps | 50 | K8s、CI/CD、监控、IaC、GitOps |
+| 🧪 测试与质量 | 40 | TDD、E2E、代码审查、性能测试 |
 | 📊 数据与可视化 | 12 | 数据可视化、BI、ML、量化分析 |
-| 🎮 游戏开发 | 11 | Unity、Unreal、Godot、ECS |
+| 🎮 游戏开发 | 9 | Unity、Unreal、Godot、ECS |
 | 📝 文档与内容 | 25 | 技术写作、API 文档、营销文案 |
-| 🔧 工具与自动化 | 50 | CLI、脚本、爬虫、文件处理 |
+| 🔧 工具与自动化 | 49 | CLI、脚本、爬虫、文件处理 |
 | 🌐 Web3 区块链 | 3 | 智能合约、DeFi、NFT |
-| 💼 产品与营销 | 37 | 产品管理、增长、定价、SEO |
-| 🎓 学习与知识 | 9 | 研究工具、笔记系统 |
+| 💼 产品与营销 | 36 | 产品管理、增长、定价、SEO |
+| 🎓 学习与知识 | 10 | 研究工具、笔记系统 |
 | 🔍 搜索与 SEO | 7 | 搜索优化、关键词、内容策略 |
-| 💬 通信与社交 | 10 | 聊天机器人、社交媒体自动化 |
-| 🖼️ 图像与创意 | 25 | AI 绘画、图像处理、设计 |
+| 💬 通信与社交 | 25 | 聊天机器人、社交媒体自动化 |
+| 🖼️ 图像与创意 | 24 | AI 绘画、图像处理、设计 |
 | 📦 编程语言 | 28 | Python、Rust、Go、TypeScript |
-| 🔄 其他专业 | 163 | HR、法律、财务、行业特定 |
+| 🔄 其他专业 | 158 | HR、法律、财务、行业特定 |
 
-**总计：698 个专业技能**
+**总计：710 个专业技能**
 
 ---
 
@@ -154,23 +154,23 @@ npx skills update xfstudio/skills
 | 技能名称 | 功能简述 | 触发条件 |
 |----------|----------|----------|
 | `active-directory-attacks` | This skill should be used when the user asks to "attack A... | the user asks to "attack Active Directory", "exploit AD",... |
-| `api-fuzzing-bug-bounty` | This skill should be used when the user asks to "test API... | the user asks to "test API security", "fuzz APIs", "find ... |
+| `api-fuzzing-for-bug-bounty` | This skill should be used when the user asks to "test API... | the user asks to "test API security", "fuzz APIs", "find ... |
 | `api-security-best-practices` | Implement secure API design patterns including authentica... |  |
 | `attack-tree-construction` | Build comprehensive attack trees to visualize threat path... | mapping attack scenarios, identifying defense gaps, or co... |
 | `aws-penetration-testing` | This skill should be used when the user asks to "pentest ... | the user asks to "pentest AWS", "test AWS security", "enu... |
 | `backend-security-coder` | Expert in secure backend coding practices specializing in... |  |
-| `broken-authentication` | This skill should be used when the user asks to "test for... | the user asks to "test for broken authentication vulnerab... |
-| `burp-suite-testing` | This skill should be used when the user asks to "intercep... | the user asks to "intercept HTTP traffic", "modify web re... |
-| `cc-skill-security-review` | Use this skill when adding authentication, handling user ... |  |
+| `broken-authentication-testing` | This skill should be used when the user asks to "test for... | the user asks to "test for broken authentication vulnerab... |
+| `burp-suite-web-application-testing` | This skill should be used when the user asks to "intercep... | the user asks to "intercept HTTP traffic", "modify web re... |
 | `ciphey` | Automatic decryption and decoding tool using AI. Use when... | user says "解密", "decrypt", "decode", "crack", "破解密码", or ... |
 | `cloud-penetration-testing` | This skill should be used when the user asks to "perform ... | the user asks to "perform cloud penetration testing", "as... |
+| `cross-site-scripting-and-html-injection-testing` | This skill should be used when the user asks to "test for... | the user asks to "test for XSS vulnerabilities", "perform... |
 | `ethical-hacking-methodology` | This skill should be used when the user asks to "learn et... | the user asks to "learn ethical hacking", "understand pen... |
 | `ffuf-claude-skill` | Web fuzzing with ffuf |  |
-| `file-path-traversal` | This skill should be used when the user asks to "test for... | the user asks to "test for directory traversal", "exploit... |
+| `file-path-traversal-testing` | This skill should be used when the user asks to "test for... | the user asks to "test for directory traversal", "exploit... |
 | `frontend-mobile-security-xss-scan` | You are a frontend security specialist focusing on Cross-... |  |
 | `frontend-security-coder` | Expert in secure frontend coding practices specializing i... |  |
 | `html-injection-testing` | This skill should be used when the user asks to "test for... | the user asks to "test for HTML injection", "inject HTML ... |
-| `idor-testing` | This skill should be used when the user asks to "test for... | the user asks to "test for insecure direct object referen... |
+| `idor-vulnerability-testing` | This skill should be used when the user asks to "test for... | the user asks to "test for insecure direct object referen... |
 | `k8s-security-policies` | Implement Kubernetes security policies including NetworkP... | securing Kubernetes clusters, implementing network isolat... |
 | `linux-privilege-escalation` | This skill should be used when the user asks to "escalate... | the user asks to "escalate privileges on Linux", "find pr... |
 | `malware-analyst` | Expert malware analyst specializing in defensive malware ... |  |
@@ -180,8 +180,8 @@ npx skills update xfstudio/skills
 | `pentest-commands` | This skill should be used when the user asks to "run pent... | the user asks to "run pentest commands", "scan with nmap"... |
 | `privilege-escalation-methods` | This skill should be used when the user asks to "escalate... | the user asks to "escalate privileges", "get root access"... |
 | `red-team-tactics` | Red team tactics principles based on MITRE ATT&CK. Attack... |  |
-| `red-team-tools` | This skill should be used when the user asks to "follow r... | the user asks to "follow red team methodology", "perform ... |
-| `scanning-tools` | This skill should be used when the user asks to "perform ... | the user asks to "perform vulnerability scanning", "scan ... |
+| `red-team-tools-and-methodology` | This skill should be used when the user asks to "follow r... | the user asks to "follow red team methodology", "perform ... |
+| `reverse-engineer-anything` | Reverse engineer native, managed, Electron/JavaScript, pa... |  |
 | `security-auditor` | Expert security auditor specializing in DevSecOps, compre... |  |
 | `security-bluebook-builder` | Build security Blue Books for sensitive apps |  |
 | `security-compliance-compliance-check` | You are a compliance expert specializing in regulatory re... |  |
@@ -190,26 +190,25 @@ npx skills update xfstudio/skills
 | `security-scanning-security-dependencies` | You are a security expert specializing in dependency vuln... |  |
 | `security-scanning-security-hardening` | Coordinate multi-layer security scanning and hardening ac... |  |
 | `security-scanning-security-sast` | Static Application Security Testing (SAST) for code vulne... |  |
-| `shodan-reconnaissance` | This skill should be used when the user asks to "search f... | the user asks to "search for exposed devices on the inter... |
+| `security-scanning-tools` | This skill should be used when the user asks to "perform ... | the user asks to "perform vulnerability scanning", "scan ... |
+| `shodan-reconnaissance-and-pentesting` | This skill should be used when the user asks to "search f... | the user asks to "search for exposed devices on the inter... |
 | `smtp-penetration-testing` | This skill should be used when the user asks to "perform ... | the user asks to "perform SMTP penetration testing", "enu... |
 | `solidity-security` | Master smart contract security best practices to prevent ... | writing smart contracts, auditing existing contracts, or ... |
 | `sql-injection-testing` | This skill should be used when the user asks to "test for... | the user asks to "test for SQL injection vulnerabilities"... |
-| `sqlmap-database-pentesting` | This skill should be used when the user asks to "automate... | the user asks to "automate SQL injection testing," "enume... |
+| `sqlmap-database-penetration-testing` | This skill should be used when the user asks to "automate... | the user asks to "automate SQL injection testing," "enume... |
 | `ssh-penetration-testing` | This skill should be used when the user asks to "pentest ... | the user asks to "pentest SSH services", "enumerate SSH c... |
 | `threat-mitigation-mapping` | Map identified threats to appropriate security controls a... | prioritizing security investments, creating remediation p... |
 | `threat-modeling-expert` | Expert in threat modeling methodologies, security archite... |  |
 | `vulnerability-scanner` | Advanced vulnerability analysis principles. OWASP 2025, S... |  |
 | `windows-privilege-escalation` | This skill should be used when the user asks to "escalate... | the user asks to "escalate privileges on Windows," "find ... |
-| `wireshark-analysis` | This skill should be used when the user asks to "analyze ... | the user asks to "analyze network traffic with Wireshark"... |
+| `wireshark-network-traffic-analysis` | This skill should be used when the user asks to "analyze ... | the user asks to "analyze network traffic with Wireshark"... |
 | `wordpress-penetration-testing` | This skill should be used when the user asks to "pentest ... | the user asks to "pentest WordPress sites", "scan WordPre... |
-| `xss-html-injection` | This skill should be used when the user asks to "test for... | the user asks to "test for XSS vulnerabilities", "perform... |
 
-### 💾 数据库与数据工程 (24个)
+### 💾 数据库与数据工程 (23个)
 
 | 技能名称 | 功能简述 | 触发条件 |
 |----------|----------|----------|
 | `airflow-dag-patterns` | Build production Apache Airflow DAGs with best practices ... | creating data pipelines, orchestrating workflows, or sche... |
-| `cc-skill-clickhouse-io` | ClickHouse database patterns, query optimization, analyti... |  |
 | `clickhouse-io` | ClickHouse database patterns, query optimization, analyti... |  |
 | `data-engineer` | Build scalable data pipelines, modern data warehouses, and |  |
 | `data-engineering-data-driven-feature` | Build features guided by data insights, A/B testing, and ... |  |
@@ -225,15 +224,15 @@ npx skills update xfstudio/skills
 | `dbt-transformation-patterns` | Master dbt (data build tool) for analytics engineering wi... | building data transformations, creating data models, or i... |
 | `neon-postgres` | Expert patterns for Neon serverless Postgres, branching, ... | neon database, serverless postgres, database branching, n... |
 | `nosql-expert` | Expert guidance for distributed NoSQL databases (Cassandr... |  |
-| `postgres-best-practices` | Postgres performance optimization and best practices from... |  |
 | `postgresql` | Design a PostgreSQL-specific schema. Covers best-practice... |  |
 | `prisma-expert` | Prisma ORM expert for schema design, migrations, query op... |  |
 | `spark-optimization` | Optimize Apache Spark jobs with partitioning, caching, sh... | improving Spark performance, debugging slow jobs, or scal... |
 | `sql-optimization-patterns` | Master SQL query optimization, indexing strategies, and E... | debugging slow queries, designing database schemas, or op... |
 | `sql-pro` | Master modern SQL with cloud-native databases, OLTP/OLAP |  |
+| `supabase-postgres-best-practices` | Postgres performance optimization and best practices from... |  |
 | `using-neon` | Guides and best practices for working with Neon Serverles... |  |
 
-### 🎨 前端开发 (34个)
+### 🎨 前端开发 (32个)
 
 | 技能名称 | 功能简述 | 触发条件 |
 |----------|----------|----------|
@@ -243,7 +242,6 @@ npx skills update xfstudio/skills
 | `angular-migration` | Migrate from AngularJS to Angular using hybrid mode, incr... | upgrading AngularJS applications, planning framework migr... |
 | `angular-state-management` | Master modern Angular state management with Signals, NgRx... | setting up global state, managing component stores, choos... |
 | `angular-ui-patterns` | Modern Angular UI patterns for loading states, error hand... | building UI components, handling async data, or managing ... |
-| `cc-skill-frontend-patterns` | Frontend development patterns for React, Next.js, state m... |  |
 | `core-components` | Core component library and design system patterns. Use wh... | building UI, using design tokens, or working with the com... |
 | `expo-tailwind-setup` | Set up Tailwind CSS v4 in Expo with react-native-css and ... |  |
 | `frontend-design` | Create distinctive, production-grade frontend interfaces ... | building or styling web UIs, components, pages, dashboard... |
@@ -252,11 +250,10 @@ npx skills update xfstudio/skills
 | `frontend-mobile-development-component-scaffold` | You are a React component architecture expert specializin... |  |
 | `frontend-patterns` | Frontend development patterns for React, Next.js, state m... |  |
 | `frontend-slides` | Create stunning, animation-rich HTML presentations from s... | the user wants to build a presentation, convert a PPT/PPT... |
-| `linux-shell-scripting` | This skill should be used when the user asks to "create b... | the user asks to "create bash scripts", "automate Linux t... |
+| `linux-production-shell-scripts` | This skill should be used when the user asks to "create b... | the user asks to "create bash scripts", "automate Linux t... |
 | `nextjs-app-router-patterns` | Master Next.js 14+ App Router with Server Components, str... | building Next |
 | `nextjs-best-practices` | Next.js App Router principles. Server Components, data fe... |  |
 | `nextjs-supabase-auth` | Expert integration of Supabase Auth with Next.js App Rout... | supabase auth next, authentication next |
-| `react-best-practices` | React and Next.js performance optimization guidelines fro... | writing, reviewing, or refactoring React/Next |
 | `react-modernization` | Upgrade React applications to latest versions, migrate fr... | modernizing React codebases, migrating to React Hooks, or... |
 | `react-patterns` | Modern React patterns and principles. Hooks, composition,... |  |
 | `react-state-management` | Master modern React state management with Redux Toolkit, ... | setting up global state, managing server state, or choosi... |
@@ -272,7 +269,7 @@ npx skills update xfstudio/skills
 | `vercel-react-best-practices` | React and Next.js performance optimization guidelines fro... | writing, reviewing, or refactoring React/Next |
 | `vercel-react-native-skills` | React Native and Expo best practices for building perform... |  |
 
-### ⚙️ 后端开发 (36个)
+### ⚙️ 后端开发 (35个)
 
 | 技能名称 | 功能简述 | 触发条件 |
 |----------|----------|----------|
@@ -285,7 +282,6 @@ npx skills update xfstudio/skills
 | `backend-development-feature-development` | Orchestrate end-to-end backend feature development from r... | coordinating multi-phase feature delivery across teams an... |
 | `backend-patterns` | Backend architecture patterns, API design, database optim... |  |
 | `billing-automation` | Build automated billing systems for recurring payments, i... | implementing subscription billing, automating invoicing, ... |
-| `cc-skill-backend-patterns` | Backend architecture patterns, API design, database optim... |  |
 | `clerk-auth` | Expert patterns for Clerk auth implementation, middleware... | adding authentication, clerk auth, user authentication, s... |
 | `django-pro` | Master Django 5.x with async views, DRF, Celery, and Django |  |
 | `dotnet-backend-patterns` | Master C#/.NET backend development patterns for building ... | developing |
@@ -326,7 +322,7 @@ npx skills update xfstudio/skills
 | `mobile-design` | Mobile-first design and engineering doctrine for iOS and ... |  |
 | `mobile-developer` | Develop React Native, Flutter, or native mobile apps with... |  |
 
-### ☁️ 云与 DevOps (39个)
+### ☁️ 云与 DevOps (50个)
 
 | 技能名称 | 功能简述 | 触发条件 |
 |----------|----------|----------|
@@ -338,7 +334,6 @@ npx skills update xfstudio/skills
 | `deployment-engineer` | Expert deployment engineer specializing in modern CI/CD p... |  |
 | `deployment-pipeline-design` | Design multi-stage CI/CD pipelines with approval gates, s... | architecting deployment workflows, setting up continuous ... |
 | `deployment-procedures` | Production deployment principles and decision-making. Saf... |  |
-| `deployment-validation-config-validate` | You are a configuration management expert specializing in... |  |
 | `devops-troubleshooter` | Expert DevOps troubleshooter specializing in rapid incident |  |
 | `docker-expert` | Docker containerization expert with deep knowledge of mul... |  |
 | `gcp-cloud-run` | Specialized skill for building production-ready serverles... |  |
@@ -368,9 +363,21 @@ npx skills update xfstudio/skills
 | `terraform-module-library` | Build reusable Terraform modules for AWS, Azure, and GCP ... | creating infrastructure modules, standardizing cloud prov... |
 | `terraform-skill` | Terraform infrastructure as code best practices |  |
 | `terraform-specialist` | Expert Terraform/OpenTofu specialist mastering advanced IaC |  |
+| `thcli-auth` | 用 thcli auth 管理腾讯云 TokenHub 的登录与凭证——查看当前登录态、浏览器 OAuth 登录、... |  |
+| `thcli-chat` | 用 thcli +chat 跑腾讯云 TokenHub 模型对话（文本/图片多模态/联网搜索/深度思考/流式）。当... |  |
+| `thcli-doctor` | 用 thcli doctor 对腾讯云 TokenHub 做只读体检与排障——检查登录凭证/站点/云 API 连通... |  |
+| `thcli-endpoint` | 用 thcli endpoint 查询腾讯云 TokenHub 的推理接入点（Endpoint）——列出接入点、查... |  |
+| `thcli-key` | 用 thcli key 查询腾讯云 TokenHub 的 API 密钥——列出密钥、查看单个密钥的状态/绑定范围/... |  |
+| `thcli-models` | 用 thcli models 查腾讯云 TokenHub 模型广场——列出模型、看单个模型详情与规格、查比价、按自... |  |
+| `thcli-monitor` | 用 thcli monitor 查腾讯云 TokenHub 的服务健康度——文本模型的请求量/错误率/延迟/TPM... |  |
+| `thcli-overview` | 用 thcli 命令行查询腾讯云 TokenHub（模型广场/推理调用/API 密钥/套餐/用量/端点）的总览与导... |  |
+| `thcli-plan` | 用 thcli plan 查询腾讯云 TokenHub 的套餐（TokenPlan，企业版/轻享版）与专属 Key... |  |
+| `thcli-shared` | thcli（腾讯云 TokenHub 命令行）所有 skill 的公共执行协议。定义认证前提、命令选择顺序、只读/... |  |
+| `thcli-tokenhub-docs` | 提供腾讯云大模型服务平台 TokenHub 官方产品文档的索引地图，以及把 TokenHub 模型接入各类 AI ... |  |
+| `thcli-usage` | 用 thcli usage 查腾讯云 TokenHub 的 token 用量——按模型/接入点/API Key 维... |  |
 | `vercel-deployment` | Expert knowledge for deploying to Vercel with Next.js Use... | vercel, deploy, deployment, hosting, production |
 
-### 🧪 测试与质量 (41个)
+### 🧪 测试与质量 (40个)
 
 | 技能名称 | 功能简述 | 触发条件 |
 |----------|----------|----------|
@@ -411,7 +418,6 @@ npx skills update xfstudio/skills
 | `testing-patterns` | Jest testing patterns, factory functions, mocking strateg... | writing unit tests, creating test factories, or following... |
 | `unit-testing-test-generate` | Generate comprehensive, maintainable unit tests across la... |  |
 | `verification-before-completion` | Use when about to claim work is complete, fixed, or passi... | about to claim work is complete, fixed, or passing, befor... |
-| `verification-loop` |  |  |
 | `wcag-audit-patterns` | Conduct WCAG 2.2 accessibility audits with automated test... | auditing websites for accessibility, fixing WCAG violatio... |
 | `web3-testing` | Test smart contracts comprehensively using Hardhat and Fo... | testing Solidity contracts, setting up blockchain test su... |
 | `webapp-testing` | Toolkit for interacting with and testing local web applic... |  |
@@ -433,15 +439,13 @@ npx skills update xfstudio/skills
 | `risk-manager` | Monitor portfolio risk, R-multiples, and position limits.... |  |
 | `risk-metrics-calculation` | Calculate portfolio risk metrics including VaR, CVaR, Sha... | measuring portfolio risk, implementing risk limits, or bu... |
 
-### 🎮 游戏开发 (11个)
+### 🎮 游戏开发 (9个)
 
 | 技能名称 | 功能简述 | 触发条件 |
 |----------|----------|----------|
 | `3d-web-experience` | Expert in building 3D experiences for the web - Three.js,... | 3D website, three |
-| `brand-guidelines-community` | Applies Anthropic's official brand colors and typography ... |  |
 | `game-development` | Game development orchestrator. Routes to platform-specifi... |  |
 | `godot-gdscript-patterns` | Master Godot 4 GDScript patterns including signals, scene... | building Godot games, implementing game systems, or learn... |
-| `internal-comms-community` | A set of resources to help me write all kinds of internal... |  |
 | `minecraft-bukkit-pro` | Master Minecraft server plugin development with Bukkit, S... |  |
 | `startup-business-analyst-market-opportunity` | Generate comprehensive market opportunity analysis with T... |  |
 | `threejs-skills` | Three.js skills for creating 3D elements and interactive ... |  |
@@ -467,7 +471,7 @@ npx skills update xfstudio/skills
 | `doc-coauthoring` | Guide users through a structured workflow for co-authorin... | user wants to write documentation, proposals, technical s... |
 | `documentation-generation-doc-generate` | You are a documentation expert specializing in creating c... |  |
 | `documentation-templates` | Documentation templates and structure guidelines. README,... |  |
-| `docx-official` | Comprehensive document creation, editing, and analysis wi... |  |
+| `docx` | Comprehensive document creation, editing, and analysis wi... |  |
 | `plan-writing` | Structured task planning with clear breakdowns, dependenc... | implementing features, refactoring, or any multi-step work |
 | `postmortem-writing` | Write effective blameless postmortems with root cause ana... | conducting incident reviews, writing postmortem documents... |
 | `reference-builder` | Creates exhaustive technical references and API documenta... |  |
@@ -479,14 +483,14 @@ npx skills update xfstudio/skills
 | `writing-plans` | Use when you have a spec or requirements for a multi-step... | you have a spec or requirements for a multi-step task, be... |
 | `writing-skills` | Use when creating, updating, or improving agent skills. | creating, updating, or improving agent skills |
 
-### 🔧 工具与自动化 (50个)
+### 🔧 工具与自动化 (49个)
 
 | 技能名称 | 功能简述 | 触发条件 |
 |----------|----------|----------|
+| `agit` | Use AgentGit when the user requests AgentGit operations o... |  |
 | `automate-whatsapp` | Build WhatsApp automations with Kapso workflows: configur... | automating WhatsApp conversations and event handling |
 | `browser-automation` | Browser automation powers web testing, scraping, and AI a... |  |
 | `browser-extension-builder` | Expert in building browser extensions that solve real pro... | browser extension, chrome extension, firefox addon, exten... |
-| `cc-skill-coding-standards` | Universal coding standards, best practices, and patterns ... |  |
 | `cc-skill-continuous-learning` | Development skill from everything-claude-code |  |
 | `cc-skill-project-guidelines-example` | Project Guidelines Skill (Example) |  |
 | `cc-skill-strategic-compact` | Development skill from everything-claude-code |  |
@@ -501,16 +505,15 @@ npx skills update xfstudio/skills
 | `invoice-organizer` | Automatically organizes invoices and receipts for tax pre... |  |
 | `javascript-mastery` | Comprehensive JavaScript reference covering 33+ essential... | explaining JS concepts, debugging JavaScript issues, or t... |
 | `javascript-pro` | Master modern JavaScript with ES6+, async patterns, and N... |  |
-| `javascript-typescript-typescript-scaffold` | You are a TypeScript project architecture expert speciali... |  |
 | `mcp-builder` | Guide for creating high-quality MCP (Model Context Protoc... | building MCP servers to integrate external APIs or servic... |
 | `modern-javascript-patterns` | Master ES6+ features including async/await, destructuring... | refactoring legacy code, implementing modern patterns, or... |
 | `n8n-code-python` | Write Python code in n8n Code nodes. Use when writing Pyt... | writing Python in n8n, using _input/_json/_node syntax, w... |
 | `n8n-mcp-tools-expert` | Expert guide for using n8n-mcp MCP tools effectively. Use... | searching for nodes, validating configurations, accessing... |
 | `n8n-node-configuration` | Operation-aware node configuration guidance. Use when con... | configuring nodes, understanding property dependencies, d... |
 | `obsidian-clipper-template-creator` | Guide for creating templates for the Obsidian Web Clipper... | you want to create a new clipping template, understand av... |
-| `pdf-official` | Comprehensive PDF manipulation toolkit for extracting tex... |  |
+| `pdf` | Comprehensive PDF manipulation toolkit for extracting tex... |  |
 | `personal-tool-builder` | Expert in building custom tools that solve your own probl... | build a tool, personal tool, scratch my itch, solve my pr... |
-| `pptx-official` | Presentation creation, editing, and analysis. When Claude... |  |
+| `pptx` | Presentation creation, editing, and analysis. When Claude... |  |
 | `raffle-winner-picker` | Picks random winners from lists, spreadsheets, or Google ... |  |
 | `sales-automator` | Draft cold emails, follow-ups, and proposal templates. Cr... |  |
 | `skill-creator` | Guide for creating effective skills. This skill should be... | users want to create a new skill (or update an existing s... |
@@ -530,7 +533,7 @@ npx skills update xfstudio/skills
 | `workflow-automation` | Workflow automation is the infrastructure that makes AI a... |  |
 | `workflow-orchestration-patterns` | Design durable workflows with Temporal for distributed sy... | building long-running processes, distributed transactions... |
 | `workflow-patterns` | Use this skill when implementing tasks according to Condu... |  |
-| `xlsx-official` | Comprehensive spreadsheet creation, editing, and analysis... |  |
+| `xlsx` | Comprehensive spreadsheet creation, editing, and analysis... |  |
 | `youtube-transcript` | Download YouTube video transcripts when user provides a Y... | user wants to transcribe or get captions/subtitles from a... |
 | `zapier-make-patterns` | No-code automation democratizes workflow building. Zapier... |  |
 
@@ -542,12 +545,11 @@ npx skills update xfstudio/skills
 | `defi-protocol-templates` | Implement DeFi protocols with production-ready templates ... | building decentralized finance applications or smart cont... |
 | `nft-standards` | Implement NFT standards (ERC-721, ERC-1155) with proper m... | creating NFT contracts, building NFT marketplaces, or imp... |
 
-### 💼 产品与营销 (37个)
+### 💼 产品与营销 (36个)
 
 | 技能名称 | 功能简述 | 触发条件 |
 |----------|----------|----------|
 | `brand-guidelines` | Applies Anthropic's official brand colors and typography ... |  |
-| `brand-guidelines-anthropic` | Applies Anthropic's official brand colors and typography ... |  |
 | `business-analyst` | Master modern business analysis with AI-powered analytics, |  |
 | `competitive-ads-extractor` | Extracts and analyzes competitors' ads from ad libraries ... |  |
 | `competitor-alternatives` | When the user wants to create competitor comparison or al... | the user mentions 'alternative page,' 'vs page,' 'competi... |
@@ -584,7 +586,7 @@ npx skills update xfstudio/skills
 | `startup-metrics-framework` | This skill should be used when the user asks about "key s... | the user asks about "key startup |
 | `viral-generator-builder` | Expert in building shareable generator tools that go vira... | generator tool, quiz maker, name generator, avatar creato... |
 
-### 🎓 学习与知识 (9个)
+### 🎓 学习与知识 (10个)
 
 | 技能名称 | 功能简述 | 触发条件 |
 |----------|----------|----------|
@@ -597,6 +599,7 @@ npx skills update xfstudio/skills
 | `notebooklm` | Use this skill to query your Google NotebookLM notebooks ... |  |
 | `research-engineer` | An uncompromising Academic Research Engineer. Operates wi... |  |
 | `tavily-web` | Web search, content extraction, crawling, and research ca... |  |
+| `weread-skills` | 微信读书助手 — 搜索书籍、管理书架、查看笔记划线、浏览书评、阅读统计、发现推荐好书 |  |
 
 ### 🔍 搜索与 SEO (7个)
 
@@ -610,7 +613,7 @@ npx skills update xfstudio/skills
 | `search-specialist` | Expert web researcher using advanced search techniques and |  |
 | `similarity-search-patterns` | Implement efficient similarity search with vector databas... | building semantic search, implementing nearest neighbor q... |
 
-### 💬 通信与社交 (10个)
+### 💬 通信与社交 (25个)
 
 | 技能名称 | 功能简述 | 触发条件 |
 |----------|----------|----------|
@@ -618,14 +621,29 @@ npx skills update xfstudio/skills
 | `baoyu-post-to-x` | Posts content and articles to X (Twitter). Supports regul... | user asks to "post to X", "tweet", "publish to Twitter", ... |
 | `customer-support` | Elite AI-powered customer support specialist mastering |  |
 | `daily-news-report` | Scrapes content based on a preset URL list, filters high-... |  |
+| `dingtalk-aicard` | Create, edit, and validate DingTalk AI Card (A2UI) JSON f... |  |
+| `dingtalk-aisearch` | AI搜问：人员语义搜索、跨源主题检索与行为回溯。Use when 语义找人，或目标未知时按主题或行为发现内容。原生... |  |
+| `dingtalk-aitable` | 钉钉 AI 表格（多维表）业务操作。Use when 用户需要操作 AI 表格/多维表/Base/Table、应用... |  |
+| `dingtalk-calendar` | 钉钉日历与会议室。Use when 用户说 约会议/查日程/订会议室/查闲忙/加参会人/改期/取消会议/今天的日程... |  |
+| `dingtalk-chat` | 钉钉群聊与消息。Use when 收发/搜索消息、建群、群治理、Bot/Webhook、文件、AI/A2UI 卡片... |  |
+| `dingtalk-contact` | 钉钉通讯录精确查询。Use when 已有 userId 后查详情、部门、职位或邮箱，按完整手机号反查用户，或查询... |  |
+| `dingtalk-doc` | 钉钉在线文档（adoc）：查找、读写、块、评论、附件、导入导出、版本、模板、权限、分享、Markdown/JSON... |  |
+| `dingtalk-drive` | 钉钉文件管理（存储层，覆盖钉盘与文档空间）。Use when 用户说 钉盘/文档空间/我的文档中的普通文件或文件夹... |  |
+| `dingtalk-event` | 钉钉个人 IM、OA 审批、VoIP 通话邀请、待办、日历、互动卡片、好友与听记事件长连接监听。Use when ... |  |
+| `dingtalk-mail` | 钉钉邮箱读写、搜索、回复与转发。Use when 用户说发邮件/查邮件/回邮件/转发邮件/未读邮件/邮件搜索/邮箱... |  |
+| `dingtalk-minutes` | 钉钉 AI 听记。Use when 查询或修改听记摘要、完整逐字稿、关键词、标签、纪要模板及默认模板、行动项、录音... |  |
+| `dingtalk-misc` | 独立脑图的带内容创建与主题读写使用 dws mind；空白脑图走 wiki，听记内置思维导图走 minutes。 ... |  |
+| `dingtalk-shared` | 钉钉(DingTalk) MultiSkill 的轻量共享入口。Use when 用户泛称 DWS/钉钉操作但未明... |  |
+| `dingtalk-tag` | 钉钉数字员工的自然语言创建、查询、修改、发布、删除、能力资源、执行状态、本地 Profile 落盘与 DSH 接入... |  |
+| `dingtalk-todo` | 钉钉待办 / TODO。Use when 用户说 创建待办/TODO/任务提醒/指派任务/标记完成/查待办/紧急待... |  |
+| `dingtalk-wiki` | 钉钉知识库与空间管理。Use when 用户明确说 知识库/wiki/创建、查找或列出知识库/命名的团队知识空间/... |  |
 | `internal-comms` | A set of resources to help me write all kinds of internal... |  |
-| `internal-comms-anthropic` | A set of resources to help me write all kinds of internal... |  |
 | `meeting-insights-analyzer` | Analyzes meeting transcripts and recordings to uncover be... |  |
 | `observe-whatsapp` | Observe and troubleshoot WhatsApp in Kapso: debug message... | investigating production issues, message failures, or web... |
 | `social-content` | When the user wants help creating, scheduling, or optimiz... | the user mentions 'LinkedIn post,' 'Twitter thread,' 'soc... |
 | `x-article-publisher-skill` | Publish articles to X/Twitter |  |
 
-### 🖼️ 图像与创意 (25个)
+### 🖼️ 图像与创意 (24个)
 
 | 技能名称 | 功能简述 | 触发条件 |
 |----------|----------|----------|
@@ -650,7 +668,6 @@ npx skills update xfstudio/skills
 | `fal-upscale` | Upscale and enhance image and video resolution using AI |  |
 | `fal-workflow` | Generate workflow JSON files for chaining AI models |  |
 | `image-enhancer` | Improves the quality of images, especially screenshots, b... |  |
-| `imagen` | \| |  |
 | `nanobanana-ppt-skills` | AI-powered PPT generation with document analysis and styl... |  |
 | `theme-factory` | Toolkit for styling artifacts with a theme. These artifac... |  |
 | `web-artifacts-builder` | Suite of tools for creating elaborate, multi-component cl... |  |
@@ -688,7 +705,7 @@ npx skills update xfstudio/skills
 | `scala-pro` | Master enterprise-grade Scala development with functional |  |
 | `systems-programming-rust-project` | You are a Rust project architecture expert specializing i... |  |
 
-### 🔄 其他专业 (163个)
+### 🔄 其他专业 (158个)
 
 | 技能名称 | 功能简述 | 触发条件 |
 |----------|----------|----------|
@@ -713,7 +730,6 @@ npx skills update xfstudio/skills
 | `clarity-gate` | Pre-ingestion verification for epistemic quality in RAG s... |  |
 | `claude-ally-health` | A health assistant skill for medical information analysis... |  |
 | `claude-code-guide` | Master guide for using Claude Code effectively. Includes ... |  |
-| `claude-d3js-skill` | Creating interactive data visualisations using d3.js. Thi... | creating custom charts, graphs, network diagrams, geograp... |
 | `claude-scientific-skills` | Scientific research and analysis skills |  |
 | `claude-speed-reader` | -Speed read Claude's responses at 600+ WPM using RSVP wit... |  |
 | `claude-win11-speckit-update-skill` | Windows 11 system management |  |
@@ -764,7 +780,6 @@ npx skills update xfstudio/skills
 | `error-diagnostics-error-analysis` | You are an expert error analysis specialist with deep exp... |  |
 | `error-diagnostics-error-trace` | You are an error tracking and observability expert specia... |  |
 | `error-handling-patterns` | Master error handling patterns across languages including... | implementing error handling, designing APIs, or improving... |
-| `eval-harness` |  |  |
 | `evaluation` | Build evaluation frameworks for agent systems |  |
 | `event-store-design` | Design and implement event stores for event-sourced syste... | building event sourcing infrastructure, choosing event st... |
 | `executing-plans` | Use when you have a written implementation plan to execut... | you have a written implementation plan to execute in a se... |
@@ -808,13 +823,10 @@ npx skills update xfstudio/skills
 | `performance-engineer` | Expert performance engineer specializing in modern observ... |  |
 | `planning-with-files` | Implements Manus-style file-based planning for complex ta... | starting complex multi-step tasks, research projects, or ... |
 | `project-development` | This skill should be used when the user asks to "start an... | the user asks to "start an LLM project", "design batch pi... |
-| `project-guidelines-example` |  |  |
 | `projection-patterns` | Build read models and projections from event streams. Use... | implementing CQRS read sides, building materialized views... |
 | `protocol-reverse-engineering` | Master network protocol reverse engineering including pac... | analyzing network traffic, understanding proprietary prot... |
 | `pypict-skill` | Pairwise test generation |  |
-| `python-development-python-scaffold` | You are a Python project architecture expert specializing... |  |
 | `ralph-loop` | Autonomous development loop for completing all remaining ... | user says "全部完成", "完成所有任务", "finish all", "complete every... |
-| `readme` | When the user wants to create or update a README.md file ... | the user says 'write readme,' 'create readme,' 'document ... |
 | `release-skills` | Universal release workflow. Auto-detects version files an... | user says "release", "发布", "new version", "bump version",... |
 | `remotion-best-practices` | Best practices for Remotion - Video creation in React |  |
 | `reverse-engineer` | Expert reverse engineer specializing in binary analysis, |  |
@@ -840,7 +852,7 @@ npx skills update xfstudio/skills
 | `team-collaboration-standup-notes` | You are an expert team communication specialist focused o... |  |
 | `team-composition-analysis` | This skill should be used when the user asks to "plan team | the user asks to "plan team |
 | `template-skill` | Replace with description of the skill and when Claude sho... |  |
-| `top-web-vulnerabilities` | This skill should be used when the user asks to "identify... | the user asks to "identify web application vulnerabilitie... |
+| `top-100-web-vulnerabilities-reference` | This skill should be used when the user asks to "identify... | the user asks to "identify web application vulnerabilitie... |
 | `track-management` | Use this skill when creating, managing, or working with C... |  |
 | `turborepo-caching` | Configure Turborepo for efficient monorepo builds with lo... | setting up Turborepo, optimizing build pipelines, or impl... |
 | `twilio-communications` | Build communication features with Twilio: SMS messaging, ... | twilio, send SMS, text message, voice call, phone verific... |
@@ -994,6 +1006,12 @@ claude
 
 ## 🔄 更新日志
 
+### 2026-11-23
+- ➕ 新增 31 个技能：钉钉 `dingtalk-*` 系列（16 个）、腾讯云 TokenHub `thcli-*` 系列（12 个）、`agit`、`reverse-engineer-anything`、`weread-skills`
+- ✏️ 重命名 18 个技能（与上游名称对齐，如 `docx-official` → `docx`、`pdf-official` → `pdf`）
+- 🧹 移除 19 个重复或已下线的技能条目
+- 🔢 当前技能总数：710 个
+
 ### 2026-02-04
 - 📊 更新技能清单格式，新增触发条件列
 - 🔢 当前技能总数：698 个
@@ -1018,6 +1036,6 @@ claude
 
 ---
 
-> 📖 文档最后更新: 2026-02-04
+> 📖 文档最后更新: 2026-11-23
 > 
 > 💡 **提示**: 建议定期运行 `npx skills update xfstudio/skills` 获取最新技能
